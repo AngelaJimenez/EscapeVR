@@ -46,8 +46,8 @@ public class AN_DoorScript : MonoBehaviour
 
     void Update()
     {
-        if ( !Remote && Input.GetKeyDown(KeyCode.E) && NearView() )
-            Action();
+        // if ( !Remote && Input.GetKeyDown(KeyCode.E) && NearView() )
+        //     Action();
         
     }
 
