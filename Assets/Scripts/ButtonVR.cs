@@ -12,17 +12,24 @@ public class ButtonVR : MonoBehaviour
     private GameObject presser;
     private Vector3 firstPositionButton; 
     private bool isPressed;
-    
+    private bool othersnotpressed;
+    public GameObject buttoncontroller;
+    private butoncontrollertable butoncontrollertable;
+    public int idbutton;
     // Start is called before the first frame update
     void Start()
     {
         isPressed= false;
         firstPositionButton=button.transform.localPosition;
+        butoncontrollertable = buttoncontroller.GetComponent<butoncontrollertable>();
     }
+
     private void OnTriggerEnter(Collider other)
     {
+        
         if(!isPressed)
         {
+            butoncontrollertable.verifychanges(idbutton);
             button.transform.localPosition= firstPositionButton- new Vector3(0,0.02f,0);
             presser= other.gameObject;
             onPress.Invoke();
@@ -33,9 +40,25 @@ public class ButtonVR : MonoBehaviour
     {
         if(other.gameObject == presser)
         {
-            button.transform.localPosition= firstPositionButton;
             onRelease.Invoke();
-            isPressed=false;
         }
     }
+
+    public void unpressButton()
+    {
+        button.transform.localPosition= firstPositionButton;
+    }
+    public bool getButton()
+    {
+        return isPressed;
+    }
+    public void changeButton(bool change)
+    {
+        isPressed=change;
+        if(!change)
+        {
+            unpressButton();
+        }
+    }
+
 }

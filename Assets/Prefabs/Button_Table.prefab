@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7662601155189295619}
   - component: {fileID: 7662601155189295618}
   - component: {fileID: 7662601155189295617}
+  - component: {fileID: 5659023767929530268}
   m_Layer: 0
   m_Name: Button_Table
   m_TagString: Untagged
@@ -102,6 +103,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5659023767929530268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662601155189295616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd9595cd5c330b43beaf3032b6a7a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttondown: {fileID: 3724708284862927015}
+  buttonUp: {fileID: 4142315740997041691}
+  buttonright: {fileID: 7920122620539381694}
+  buttonleft: {fileID: 5278094690802948002}
 --- !u!1 &7662601156670685559
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: buttoncontroller
+      value: 
+      objectReference: {fileID: 7662601155189295616}
     - target: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -280,6 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbded989b778ff1419808683371cd9df, type: 3}
+--- !u!1 &3724708284862927015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289565561707589302, guid: dbded989b778ff1419808683371cd9df, type: 3}
+  m_PrefabInstance: {fileID: 2474067706951630353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8886341869780605401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
@@ -296,6 +322,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: idbutton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: buttoncontroller
+      value: 
+      objectReference: {fileID: 7662601155189295616}
     - target: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -342,6 +376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbded989b778ff1419808683371cd9df, type: 3}
+--- !u!1 &4142315740997041691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289565561707589302, guid: dbded989b778ff1419808683371cd9df, type: 3}
+  m_PrefabInstance: {fileID: 2925372954651611309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8186986198093444965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
@@ -358,6 +397,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: idbutton
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: buttoncontroller
+      value: 
+      objectReference: {fileID: 7662601155189295616}
     - target: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -433,6 +480,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
   m_PrefabInstance: {fileID: 6402704852317059348}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5278094690802948002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289565561707589302, guid: dbded989b778ff1419808683371cd9df, type: 3}
+  m_PrefabInstance: {fileID: 6402704852317059348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8938687054382975240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +496,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: button
       objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: idbutton
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371476664892110602, guid: dbded989b778ff1419808683371cd9df, type: 3}
+      propertyPath: buttoncontroller
+      value: 
+      objectReference: {fileID: 7662601155189295616}
     - target: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -517,5 +577,10 @@ PrefabInstance:
 --- !u!4 &2669402188245675712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6415104586107447240, guid: dbded989b778ff1419808683371cd9df, type: 3}
+  m_PrefabInstance: {fileID: 8938687054382975240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7920122620539381694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289565561707589302, guid: dbded989b778ff1419808683371cd9df, type: 3}
   m_PrefabInstance: {fileID: 8938687054382975240}
   m_PrefabAsset: {fileID: 0}
