@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13155,6 +13155,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 287744191}
     m_Modifications:
+    - target: {fileID: 968613291448860866, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001462302167691486, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5659023767929530268, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: father
       value: 
@@ -13206,6 +13214,14 @@ PrefabInstance:
     - target: {fileID: 7662601155189295868, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646464828515469255, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021499193868708219, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
@@ -14781,7 +14797,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -18190,6 +18206,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 287744191}
     m_Modifications:
+    - target: {fileID: 968613291448860866, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001462302167691486, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 5659023767929530268, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: father
       value: 
@@ -18245,6 +18269,14 @@ PrefabInstance:
     - target: {fileID: 7662601155189295868, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646464828515469255, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021499193868708219, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
@@ -21061,6 +21093,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 287744191}
     m_Modifications:
+    - target: {fileID: 968613291448860866, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001462302167691486, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 5659023767929530268, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: father
       value: 
@@ -21116,6 +21156,14 @@ PrefabInstance:
     - target: {fileID: 7662601155189295868, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646464828515469255, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021499193868708219, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
@@ -23845,6 +23893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1760410933}
     m_Modifications:
+    - target: {fileID: 788821424144647835, guid: 0d6a81bbd10edf34ab6c455f815a3934, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3731167728626946111, guid: 0d6a81bbd10edf34ab6c455f815a3934, type: 3}
       propertyPath: sceneViewId
       value: 1
@@ -26430,7 +26482,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -29073,6 +29125,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751544397}
   m_CullTransparentMesh: 1
+--- !u!1 &1752570322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 350605575929052853, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+  m_PrefabInstance: {fileID: 860887393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752570327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752570322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1752570328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752570322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1752570327}
+  sceneViewId: 11
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &1752967480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33593,6 +33689,14 @@ PrefabInstance:
       propertyPath: buttoncontroller
       value: 
       objectReference: {fileID: 1067111792}
+    - target: {fileID: 968613291448860866, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001462302167691486, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 5659023767929530268, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
       propertyPath: father
       value: 
@@ -33665,6 +33769,14 @@ PrefabInstance:
       propertyPath: buttoncontroller
       value: 
       objectReference: {fileID: 1067111792}
+    - target: {fileID: 8646464828515469255, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021499193868708219, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
+      propertyPath: sceneViewId
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acd5f404e349c88459e4f1cef013ea3c, type: 3}
 --- !u!4 &1980564889 stripped
@@ -37795,7 +37907,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1

@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 3131944070195422161}
   - component: {fileID: 8136497298929028700}
   - component: {fileID: 3371476664892110602}
+  - component: {fileID: 6173254814891194838}
+  - component: {fileID: 1622007713285055804}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -200,6 +202,47 @@ MonoBehaviour:
   onRelease:
     m_PersistentCalls:
       m_Calls: []
+  buttoncontroller: {fileID: 0}
+  idbutton: 0
+--- !u!114 &6173254814891194838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189844697649442328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1622007713285055804}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1622007713285055804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189844697649442328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &6176939286677933849
 GameObject:
   m_ObjectHideFlags: 0
