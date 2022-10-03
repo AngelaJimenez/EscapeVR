@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 3731167728626946111}
   - component: {fileID: 730116874271684182}
   - component: {fileID: 788821424144647835}
+  - component: {fileID: 2183616780740565454}
   m_Layer: 0
   m_Name: lever
   m_TagString: Untagged
@@ -622,3 +623,16 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &2183616780740565454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498532850148036082}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d290d8e963b08ce49bdecaee78ffd392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertas: []
