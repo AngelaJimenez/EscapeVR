@@ -9,7 +9,7 @@ public class OpenDoorScript : MonoBehaviour
     private Animator animator2;
     private bool estado1;
     private bool estado2;
-    private bool cambio = false;
+    private bool cambio = true;
     
 
     // Start is called before the first frame update
@@ -25,14 +25,21 @@ public class OpenDoorScript : MonoBehaviour
     void Update()
     {
 
-      estado1 = animator1.GetBool("Open");
-      estado2 = animator2.GetBool("Open");
-
-      if((this.transform.rotation.x>0.4f ||this.transform.rotation.x>-0.4f ) && !cambio)
+      if((this.transform.rotation.x>0.4f ||this.transform.rotation.x<-0.3f) && !cambio)
       {
+          estado1 = animator1.GetBool("Open");
+          estado2 = animator2.GetBool("Open");
           animator1.SetBool("Open",!estado1);
           animator2.SetBool("Open",!estado2);
-          cambio = !cambio;
+          cambio = true;
+        
       }
+      if(cambio && this.transform.rotation.x>-0.2f && this.transform.rotation.x<0.2f)
+      {
+        cambio = false;
+        
+
+      }
+
     }
 }
