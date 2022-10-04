@@ -15,7 +15,7 @@ public class OpenDoorScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      this.transform.rotation = new Quaternion(-0.4f,0,0,0);
+      this.transform.localRotation = new Quaternion(-0.4f,0,0,0);
       animator1 = puerta[0].GetComponent<Animator>();
       animator2 = puerta[1].GetComponent<Animator>();
       
@@ -25,7 +25,7 @@ public class OpenDoorScript : MonoBehaviour
     void Update()
     {
 
-      if((this.transform.rotation.x>0.4f ||this.transform.rotation.x<-0.3f) && !cambio)
+      if((this.transform.localRotation.x>0.4f ||this.transform.localRotation.x<-0.3f) && !cambio)
       {
           estado1 = animator1.GetBool("Open");
           estado2 = animator2.GetBool("Open");
@@ -34,7 +34,7 @@ public class OpenDoorScript : MonoBehaviour
           cambio = true;
         
       }
-      if(cambio && this.transform.rotation.x>-0.2f && this.transform.rotation.x<0.2f)
+      if(cambio && this.transform.localRotation.x>-0.2f && this.transform.localRotation.x<0.2f)
       {
         cambio = false;
         
