@@ -28,7 +28,7 @@ public class OpenDoorScript : MonoBehaviour
       estado1 = animator1.GetBool("Open");
       estado2 = animator2.GetBool("Open");
 
-      if(this.transform.rotation.x>0.4f && !cambio)
+      if((this.transform.rotation.x>0.4f ||this.transform.rotation.x>-0.4f ) && !cambio)
       {
           animator1.SetBool("Open",!estado1);
           animator2.SetBool("Open",!estado2);
