@@ -59,6 +59,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8949139800759836613}
   - component: {fileID: 6864906731905219449}
+  - component: {fileID: 5096942135598784231}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -98,6 +99,19 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!65 &5096942135598784231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743879453815982278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06011057, y: 0.110272646, z: 0.19243526}
+  m_Center: {x: -0.026455164, y: -0.032283902, z: -0.022160053}
 --- !u!1 &4078636848287481670
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8948512367054298485}
   - component: {fileID: 7646271594488291729}
+  - component: {fileID: 7408237522817173937}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -228,6 +243,19 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!65 &7408237522817173937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697842433541011457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.075838566, y: 0.13418436, z: 0.17424965}
+  m_Center: {x: 0.028985739, y: -0.030954123, z: -0.03358841}
 --- !u!1 &6423399090960028161
 GameObject:
   m_ObjectHideFlags: 0

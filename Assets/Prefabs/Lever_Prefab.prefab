@@ -328,9 +328,9 @@ GameObject:
   - component: {fileID: 7498532850148036086}
   - component: {fileID: 7498532850148036084}
   - component: {fileID: 3731167728626946111}
-  - component: {fileID: 730116874271684182}
   - component: {fileID: 788821424144647835}
   - component: {fileID: 2183616780740565454}
+  - component: {fileID: 374006214076741307}
   m_Layer: 0
   m_Name: lever
   m_TagString: Untagged
@@ -486,28 +486,12 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 1
-  observableSearch: 2
+  observableSearch: 1
   ObservedComponents:
-  - {fileID: 730116874271684182}
+  - {fileID: 374006214076741307}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &730116874271684182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7498532850148036082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!114 &788821424144647835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,3 +622,19 @@ MonoBehaviour:
   puerta:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &374006214076741307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498532850148036082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
