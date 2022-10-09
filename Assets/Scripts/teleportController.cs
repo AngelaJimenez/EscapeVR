@@ -10,13 +10,14 @@ public class teleportController : MonoBehaviour
     private GameObject lastCurrent;
 
     private GameObject Room2andhallway;
-    private GameObject finalPath;
+
     private GameObject mainRoom1;
     private GameObject[] prison = new GameObject[6];
     private bool[] door_prision = new bool[6];
     // Start is called before the first frame update
     void Start()
     {
+        
         GameObject teleport = Instantiate(tp,new Vector3(0,0,0),new Quaternion(0,0,0,0));
         Transform[] ts = teleport.transform.GetComponentsInChildren<Transform>();
         for (int i = 0; i < 6; i++)
@@ -25,15 +26,12 @@ public class teleportController : MonoBehaviour
         }
         
          foreach (Transform t in ts) {
-            Debug.Log(t.gameObject.name );
+           
             if(t.gameObject.name== "Room2andhallway")
                 {
                 Room2andhallway=  t.gameObject;
                 }
-            if(t.gameObject.name== "finalPath")
-                {
-                finalPath=  t.gameObject;
-                }
+           
             if(t.gameObject.name== "mainRoom1")
                 {
                 mainRoom1=  t.gameObject;
@@ -74,8 +72,10 @@ public class teleportController : MonoBehaviour
             current=prison[2];
             lastCurrent= prison[2];
          }
+        
          deactivateAll();
          activeCurrent();
+        
    }
     private void deactivateAll()
     {
@@ -84,8 +84,18 @@ public class teleportController : MonoBehaviour
             item.SetActive(false);
          }
          mainRoom1.SetActive(false);
+          Room2andhallway.SetActive(false);
+
     }
-    
+    private void activateAll()
+    {
+        foreach (var item in prison)
+         {
+            item.SetActive(true);
+         }
+         Room2andhallway.SetActive(true);
+         mainRoom1.SetActive(true);
+    }
     private void activeCurrent()
     {
         current.SetActive(true);

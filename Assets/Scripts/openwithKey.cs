@@ -11,11 +11,19 @@ public class openwithKey : MonoBehaviour
  void Start() {
         animator= door.GetComponent<Animator>();
 
-        finalpath= GameObject.Find("/TP/TeleportArea/finalPath");
+        
+}
+ void Update() {
+ if(!finalpath && GameObject.Find("TP(Clone)/TeleportArea/finalPath"))
+       {
+finalpath= GameObject.Find("TP(Clone)/TeleportArea/finalPath");
+
+finalpath.SetActive(false);
+       }    
 }
  void OnCollisionEnter(Collision collision)
     {
-       
+      
 if(collision.gameObject.CompareTag("finalDoorKey")){
 isKey= true;
 
@@ -23,7 +31,7 @@ isKey= true;
     }
 
  public void check() {
-    
+ 
     if(isKey)
     {
         animator.SetBool("Open",true);
