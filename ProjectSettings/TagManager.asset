@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - finalDoorKey
+  - secondPlayer
+  - firstPlayer
   layers:
   - Default
   - TransparentFX

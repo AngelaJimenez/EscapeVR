@@ -7,9 +7,11 @@ public class openwithKey : MonoBehaviour
         public GameObject door;
         private bool isKey=false;
         private Animator animator;
-public GameObject finalpath;
+        private GameObject finalpath;
  void Start() {
         animator= door.GetComponent<Animator>();
+
+        finalpath= GameObject.Find("/TP/TeleportArea/finalPath");
 }
  void OnCollisionEnter(Collision collision)
     {
@@ -21,6 +23,7 @@ isKey= true;
     }
 
  public void check() {
+    
     if(isKey)
     {
         animator.SetBool("Open",true);

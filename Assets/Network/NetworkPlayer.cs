@@ -19,14 +19,14 @@ public class NetworkPlayer : MonoBehaviour
     private Transform headRig;
     private Transform leftHandRig;
     private Transform rightHandRig;    
-
+    public GameObject father;
     // Start is called before the first frame update
     void Start()
     {
         photonView = GetComponent<PhotonView>();
-        XROrigin rig = FindObjectOfType<XROrigin>();
+        XROrigin rig = father.gameObject.transform.Find("XROrigin").GetComponent<XROrigin>();
        
-        headRig = rig.transform.Find("Camera Offset/Main Camera");
+        headRig = rig.transform.Find("  Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
         if(photonView.IsMine)
