@@ -4496,7 +4496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3dd71e419817754a9f4092171945b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expectedvalues: 01000000010000000300000000000000
+  expectedvalues: 01000000010000000100000001000000
   chest: {fileID: 1820353727}
   table1: {fileID: 860887394}
   table2: {fileID: 1067111792}
