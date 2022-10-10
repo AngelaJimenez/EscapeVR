@@ -7,6 +7,8 @@ TagManager:
   - finalDoorKey
   - secondPlayer
   - firstPlayer
+  - gear1
+  - gear2
   layers:
   - Default
   - TransparentFX
