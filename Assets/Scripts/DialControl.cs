@@ -27,7 +27,7 @@ public class DialControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(dial1.transform.localRotation.z);
+        
         if(dial1.transform.localRotation.z > -0.1f && dial1.transform.localRotation.z < 0.1f
             && dial2.transform.localRotation.z > 0.2f && dial2.transform.localRotation.z < 0.4f
             && dial3.transform.localRotation.z > 0.5f && dial3.transform.localRotation.z < 0.7f
