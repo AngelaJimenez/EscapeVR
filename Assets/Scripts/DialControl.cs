@@ -22,29 +22,29 @@ public class DialControl : MonoBehaviour
     void Start()
     {
         animator = body.GetComponent<Animator>();
-        dial1.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
-        dial2.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
-        dial3.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
-        dial4.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
-
+        dial1.transform.localRotation = Quaternion.Euler(0,0,0f);
+        dial2.transform.localRotation = Quaternion.Euler(0,0,0f);
+        dial3.transform.localRotation = Quaternion.Euler(0,0,0f);
+        dial4.transform.localRotation = Quaternion.Euler(0,0,0f);
     }
 
     // Update is called once per frame
     void Update()
     {
  
+        // Debug.Log(Mathf.Abs(dial3.transform.localRotation.z));
         if( Mathf.Abs(dial1.transform.localRotation.z) > 0.8f && Mathf.Abs(dial1.transform.localRotation.z) < 1.0f
         && Mathf.Abs(dial2.transform.localRotation.z) > 0.5f && Mathf.Abs(dial2.transform.localRotation.z) < 0.7f
-        &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
-        && Mathf.Abs(dial4.transform.localRotation.z) > 0.2f && Mathf.Abs(dial4.transform.localRotation.z)< 0.4f     
-             && cambio ==false
+          &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
+         
+           && cambio == false
             )
         {
             Debug.Log("correcto");
             cambio = true;
             animator.SetBool("Open", true);
             locker.SetActive(false);
-                    }
-       
+        }
+            
     }
 }
