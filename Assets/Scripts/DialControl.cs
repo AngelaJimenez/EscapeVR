@@ -22,17 +22,23 @@ public class DialControl : MonoBehaviour
     void Start()
     {
         animator = body.GetComponent<Animator>();
+        dial1.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
+        dial2.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
+        dial3.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
+        dial4.transform.localRotation = Quaternion.Euler(0,0,-0.3f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(dial1.transform.localRotation.z > -0.1f && dial1.transform.localRotation.z < 0.1f
-            && dial2.transform.localRotation.z > 0.2f && dial2.transform.localRotation.z < 0.4f
-            && dial3.transform.localRotation.z > 0.5f && dial3.transform.localRotation.z < 0.7f
-             && dial4.transform.localRotation.z > 0.8f && dial4.transform.localRotation.z < 1.0f
-             && cambio ==false)
+ 
+        if( Mathf.Abs(dial1.transform.localRotation.z) > 0.8f && Mathf.Abs(dial1.transform.localRotation.z) < 1.0f
+        && Mathf.Abs(dial2.transform.localRotation.z) > 0.5f && Mathf.Abs(dial2.transform.localRotation.z) < 0.7f
+        &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
+        && Mathf.Abs(dial4.transform.localRotation.z) > 0.2f && Mathf.Abs(dial4.transform.localRotation.z)< 0.4f     
+             && cambio ==false
+            )
         {
             Debug.Log("correcto");
             cambio = true;
