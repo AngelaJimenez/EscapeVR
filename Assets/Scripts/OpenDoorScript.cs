@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpenDoorScript : MonoBehaviour
 {
-    public GameObject[] puerta = new GameObject[2];
+    public GameObject[] puerta;
     private Animator animator1;
     private Animator animatorLocker;
     private Animator animator2;
@@ -17,7 +17,11 @@ public class OpenDoorScript : MonoBehaviour
     {
       this.transform.localRotation = new Quaternion(-0.4f,0,0,0);
       animator1 = puerta[0].GetComponent<Animator>();
-      animator2 = puerta[1].GetComponent<Animator>();
+      if(puerta.Length>1)
+      {
+        animator2 = puerta[1].GetComponent<Animator>();
+      }
+      
 
       animatorLocker = GameObject.Find("lock (1)/Body").GetComponent<Animator>();
     }
@@ -40,18 +44,22 @@ public class OpenDoorScript : MonoBehaviour
 
           }
         }
-        if(!(puerta[1].gameObject.name=="Cell_Door_3"))
+        if(puerta.Length>1)
         {
-          estado2 = animator2.GetBool("Open");
-          animator2.SetBool("Open",!estado2);
-        }
-        else{
-          if(animatorLocker.GetBool("Open")){
-          estado1 = animator1.GetBool("Open");
-          animator1.SetBool("Open",!estado1);
-
+            if(!(puerta[1].gameObject.name=="Cell_Door_3"))
+          {
+            estado2 = animator2.GetBool("Open");
+            animator2.SetBool("Open",!estado2);
           }
-          
+          else{
+            if(animatorLocker.GetBool("Open")){
+            estado1 = animator1.GetBool("Open");
+            animator1.SetBool("Open",!estado1);
+
+            }
+
+        }
+            
         }
         
           cambio = true;
