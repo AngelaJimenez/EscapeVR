@@ -9,6 +9,7 @@ TagManager:
   - firstPlayer
   - gear1
   - gear2
+  - keyChesGears
   layers:
   - Default
   - TransparentFX
