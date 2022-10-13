@@ -33,10 +33,10 @@ public class DialControl : MonoBehaviour
     void Update()
     {
  
-        if( Mathf.Abs(dial1.transform.localRotation.z) > 0.85f && Mathf.Abs(dial1.transform.localRotation.z) < 0.95f
-        && Mathf.Abs(dial2.transform.localRotation.z) > 0.55f && Mathf.Abs(dial2.transform.localRotation.z) < 0.65f
-        &&Mathf.Abs(dial3.transform.localRotation.z) > -0.05f && Mathf.Abs(dial3.transform.localRotation.z) < 0.05f
-        && Mathf.Abs(dial4.transform.localRotation.z) > 0.25f && Mathf.Abs(dial4.transform.localRotation.z)< 0.35f     
+        if( Mathf.Abs(dial1.transform.localRotation.z) > 0.8f && Mathf.Abs(dial1.transform.localRotation.z) < 1.0f
+        && Mathf.Abs(dial2.transform.localRotation.z) > 0.5f && Mathf.Abs(dial2.transform.localRotation.z) < 0.7f
+        &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
+        && Mathf.Abs(dial4.transform.localRotation.z) > 0.2f && Mathf.Abs(dial4.transform.localRotation.z)< 0.4f     
              && cambio ==false
             )
         {
