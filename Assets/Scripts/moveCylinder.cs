@@ -3,12 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+using Photon.Pun;
 public class moveCylinder : XRGrabInteractable
-{
+{    private PhotonView photonview;
+    // Start is called before the first frame update
+    void Start()
+    {
+        photonview = GetComponent<PhotonView>();
+    }
     protected override void Awake()
     {
         base.Awake();
         CreateAttachTransform();
+    }
+     protected override void OnSelectEntered(XRBaseInteractor interactor)
+    {
+        photonview.RequestOwnership();
+        base.OnSelectEntered(interactor);
     }
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {

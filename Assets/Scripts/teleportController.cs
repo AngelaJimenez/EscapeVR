@@ -106,7 +106,8 @@ public class teleportController : MonoBehaviour
         dooranimator[5]= GameObject.Find("doors/Cell_Door_4").GetComponent<Animator>();
         dooranimator[4]= GameObject.Find("doors/Cell_Door_5").GetComponent<Animator>();
         dooranimator[3]= GameObject.Find("doors/Cell_Door_6").GetComponent<Animator>();
-        
+        clockverification clock = GameObject.Find("clock").GetComponent<clockverification>();;
+        clock.tpcontroller = this;
          deactivateAll();
          activeCurrent();
         

@@ -14,9 +14,8 @@ public class gearatach : MonoBehaviour
  void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag(taggear)){
-
         foundIt= collision.gameObject;
- 
+        
 }
 
     }
@@ -30,6 +29,7 @@ public class gearatach : MonoBehaviour
            
          Rigidbody m_Rigidbody= foundIt.GetComponent< Rigidbody>();
          foundIt.transform.position=position;
+         m_Rigidbody.useGravity = false;
          foundIt.transform.rotation= Quaternion.Euler(new Vector3(0, 180, 0));
             m_Rigidbody.constraints = RigidbodyConstraints.FreezePositionZ |  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezeRotationY|RigidbodyConstraints.FreezeRotationX;
         keyHolder.SetActive(false);
