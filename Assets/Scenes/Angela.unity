@@ -3664,6 +3664,7 @@ MonoBehaviour:
   taggear: gear1
   keyHolder: {fileID: 1144212841}
   me: {fileID: 254405795}
+  position: {x: -13.063, y: 0.989, z: -10.483}
 --- !u!135 &254405798
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5507,6 +5508,7 @@ MonoBehaviour:
   taggear: gear2
   keyHolder: {fileID: 1978060666}
   me: {fileID: 375932498}
+  position: {x: -11.63, y: 0.989, z: -10.483}
 --- !u!135 &375932501
 SphereCollider:
   m_ObjectHideFlags: 0
