@@ -14,10 +14,9 @@ public class gearatach : MonoBehaviour
  void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag(taggear)){
-        isKey= true;
-       
+
         foundIt= collision.gameObject;
-            isKey = true;
+ 
 }
 
     }
@@ -26,7 +25,7 @@ public class gearatach : MonoBehaviour
 
        
         isKey = true;
-        if (isKey && foundIt )
+        if (foundIt )
     {
            
          Rigidbody m_Rigidbody= foundIt.GetComponent< Rigidbody>();
