@@ -17,7 +17,7 @@ public class gearatach : MonoBehaviour
         isKey= true;
        
         foundIt= collision.gameObject;
- 
+            isKey = true;
 }
 else{
      isKey= false;
@@ -25,13 +25,16 @@ else{
     }
 
  public void check() {
-    if(isKey && foundIt )
+
+       
+        isKey = true;
+        if (isKey && foundIt )
     {
-        
+           
          Rigidbody m_Rigidbody= foundIt.GetComponent< Rigidbody>();
          foundIt.transform.position=position;
-         foundIt.transform.rotation= new Quaternion(0,0,0,0);
-        m_Rigidbody.constraints = RigidbodyConstraints.FreezePositionZ |  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezeRotationY|RigidbodyConstraints.FreezeRotationX;
+         foundIt.transform.rotation= Quaternion.Euler(new Vector3(0, 180, 0));
+            m_Rigidbody.constraints = RigidbodyConstraints.FreezePositionZ |  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezeRotationY|RigidbodyConstraints.FreezeRotationX;
         keyHolder.SetActive(false);
         me.SetActive(false);
         Gearmove script= foundIt.AddComponent<Gearmove>();

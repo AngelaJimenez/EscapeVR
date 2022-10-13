@@ -14,6 +14,9 @@ public class Gearmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pointer.transform.rotation=  Quaternion.Euler(pointer.transform.rotation.x,pointer.transform.rotation.y, this.gameObject.transform.rotation.z);
+        Debug.Log(pointer.transform.localRotation.z);
+        Debug.Log(this.transform.localRotation.z+"engranaje");
+        Vector3 eulerRotation = new Vector3(pointer.transform.eulerAngles.x, pointer.transform.eulerAngles.y, transform.eulerAngles.z);
+        pointer.transform.rotation = Quaternion.Euler(eulerRotation);
     }
 }
