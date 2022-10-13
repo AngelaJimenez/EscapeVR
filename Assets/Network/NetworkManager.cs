@@ -30,9 +30,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinOrCreateRoom("Room 1", roomOptions, TypedLobby.Default);
     }
 
+
     public override void OnJoinedRoom()
     {
-        Debug.Log("Joined a Room");
+        Debug.Log("Joined a Room AAA" );
         base.OnJoinedRoom();
     }
 
