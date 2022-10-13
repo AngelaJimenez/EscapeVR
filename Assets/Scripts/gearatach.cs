@@ -19,9 +19,7 @@ public class gearatach : MonoBehaviour
         foundIt= collision.gameObject;
             isKey = true;
 }
-else{
-     isKey= false;
-}
+
     }
 
  public void check() {
