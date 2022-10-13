@@ -41,7 +41,7 @@ public class clockverification : MonoBehaviour
          {
             waitinghours=true;
             timeh= Time.time;
-            Debug.Log("yeyhour");
+    
             
          }else if(hours.transform.eulerAngles.z>325f && hours.transform.eulerAngles.z<335f &&waitinghours  )
          {
@@ -60,7 +60,7 @@ public class clockverification : MonoBehaviour
 
 
          if(minutes.transform.eulerAngles.z>203f && minutes.transform.eulerAngles.z<217f && !waitingmin){
-            Debug.Log("yeymin");
+
             waitingmin=true;
             timem= Time.time;
          }
@@ -77,7 +77,6 @@ public class clockverification : MonoBehaviour
          }
         if(perfecthours && perfectmin)
         {
-            Debug.Log("yey");
             anim1.SetBool("Open",true);
             anim2.SetBool("Open",true);
             tpcontroller.openRoom2();
