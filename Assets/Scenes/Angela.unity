@@ -12584,6 +12584,7 @@ MonoBehaviour:
   dial3: {fileID: 2005399149}
   dial4: {fileID: 5477196}
   clave: 0000000000000000
+  locker: {fileID: 919132148695799448}
 --- !u!1001 &692014312
 PrefabInstance:
   m_ObjectHideFlags: 0

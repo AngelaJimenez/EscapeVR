@@ -16,7 +16,7 @@ public class DialControl : MonoBehaviour
 
     public char[] clave = new char[4];
 
-
+    public GameObject locker;
 
     // Start is called before the first frame update
     void Start()
@@ -43,8 +43,8 @@ public class DialControl : MonoBehaviour
             Debug.Log("correcto");
             cambio = true;
             animator.SetBool("Open", true);
-            
-        }
+            locker.SetActive(false);
+                    }
        
     }
 }
