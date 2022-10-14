@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.UI;
 public class teleportController : MonoBehaviour
 {
     public GameObject tp;
@@ -18,6 +19,30 @@ public class teleportController : MonoBehaviour
     private Animator[] dooranimator= new  Animator[6];
     private bool needcheck=false;
     private   teleportationAreaOnChange teleporareachange;
+    private TextMeshPro pista2Object;
+    private TextMeshPro pistascrollObject;
+
+    private string pistascroll = "Ten los ojos bien abiertos. Si no terminas a tiempo, el mintauro vendra por ti. Se agil como una serpiente y sal corriendo de aqui. ";
+    private string deshabilitado= "ABRE LA PUERTA";
+    private string pista2= "El último invitado se fue antes de medianoche. 3 horas antes habían preparado la cena. El cocinero anuncio que el postre saldría 15 minutos después del plato principal. Después de una charla de 1 hora y 30 minutos, Amir y el invitado habían vaciado sus platos. El postre llego y Amir me envió a buscar una botella de ron. Despues de 20 minutos regrese con la botella y media hora más tarde, el invitado habría completado su visita.";
+
+    private void decideclues()
+    {
+        pista2Object.text = deshabilitado;
+
+        pistascrollObject.text = deshabilitado;
+
+        if (door_prision[4])
+        {
+            pista2Object.text = pista2;
+        }
+        if(door_prision[0])
+        {
+            pistascrollObject.text = pistascroll;
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -110,8 +135,10 @@ public class teleportController : MonoBehaviour
         clock.tpcontroller = this;
          deactivateAll();
          activeCurrent();
-        
-   }
+        pista2Object = GameObject.Find("Prison/pista2/Text").GetComponent<TextMeshPro>();
+        pistascrollObject= GameObject.Find("Prison/Scroll_Open/Text").GetComponent<TextMeshPro>();
+        decideclues();
+    }
     private void deactivateAll()
     {
         foreach (var item in prison)
@@ -182,7 +209,8 @@ public class teleportController : MonoBehaviour
             }
         }
         lastCurrent=current;
-        needcheck=false;
+        decideclues();
+        needcheck =false;
     }
         private void checkinfrommain()
     {
