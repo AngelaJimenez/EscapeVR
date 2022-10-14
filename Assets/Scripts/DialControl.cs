@@ -34,9 +34,9 @@ public class DialControl : MonoBehaviour
  
         // Debug.Log(Mathf.Abs(dial3.transform.localRotation.z));
         if( Mathf.Abs(dial1.transform.localRotation.z) > 0.8f && Mathf.Abs(dial1.transform.localRotation.z) < 1.0f
-        && Mathf.Abs(dial2.transform.localRotation.z) > 0.5f && Mathf.Abs(dial2.transform.localRotation.z) < 0.7f
-          &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
-         
+        && Mathf.Abs(dial2.transform.localRotation.z) > 0.2f && Mathf.Abs(dial2.transform.localRotation.z) < 0.4f
+        &&Mathf.Abs(dial3.transform.localRotation.z) > -0.1f && Mathf.Abs(dial3.transform.localRotation.z) < 0.1f
+        && Mathf.Abs(dial4.transform.localRotation.z) > 0.5f && Mathf.Abs(dial4.transform.localRotation.z) < 0.7f   
            && cambio == false
             )
         {

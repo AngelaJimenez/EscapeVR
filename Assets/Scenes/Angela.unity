@@ -44794,12 +44794,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nDurante una de sus traves\xEDas por Egipto, Amir vio la muerte a los
-    ojos. Aquella serpiente que guardaba como trofeo, lo hab\xEDa mordido durante
-    una expedici\xF3n. El lugar m\xE1s cercano era una granja que quedaba a multiples
-    horas de distancia. El veneno que corr\xEDa por su sangre habr\xEDa terminado
-    con su vida si no hubiese sido tratado a tiempo. Por fortuna, Amir aun contaba
-    con su vida, pero no con su pierna derecha. \r\n"
+  m_text: 'Ten los ojos bien abiertos. Si no terminas a tiempo, el mintauro vendra
+    por ti. Se agil como una serpiente y sal corriendo de aqui. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
