@@ -43,7 +43,8 @@ public class DialControl : MonoBehaviour
             Debug.Log("correcto");
             cambio = true;
             animator.SetBool("Open", true);
-            locker.SetActive(false);
+
+            //locker.SetActive(false);
         }
             
     }
