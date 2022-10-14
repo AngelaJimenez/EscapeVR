@@ -4723,6 +4723,7 @@ MonoBehaviour:
   me: {fileID: 254405795}
   position: {x: -13.231, y: 0.989, z: -10.483}
   pointer: {fileID: 7410012401927106854}
+  positioned: 0
 --- !u!135 &254405798
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6854,11 +6855,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98237e2cfa8c7745a6559f764a70b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taggear: gear2
+  taggear: gear1
   keyHolder: {fileID: 1978060666}
   me: {fileID: 375932498}
   position: {x: -11.542, y: 0.989, z: -10.483}
   pointer: {fileID: 7410012401927106850}
+  positioned: 0
 --- !u!135 &375932501
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18128,7 +18130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
       propertyPath: m_TagString
-      value: gear2
+      value: gear1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
@@ -47972,7 +47974,6 @@ GameObject:
   - component: {fileID: 7410012401927269636}
   - component: {fileID: 7410012401927269635}
   - component: {fileID: 7410012401927269642}
-  - component: {fileID: 7410012401927269637}
   m_Layer: 0
   m_Name: rotation_axis_pointer_hour
   m_TagString: Untagged
@@ -47992,7 +47993,6 @@ GameObject:
   - component: {fileID: 7410012401927269641}
   - component: {fileID: 7410012401927269639}
   - component: {fileID: 7410012401927269644}
-  - component: {fileID: 7410012401927269643}
   m_Layer: 0
   m_Name: rotation_axis_pointer_minutes
   m_TagString: Untagged
@@ -48121,22 +48121,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7410012401927269637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7410012401927106850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!4 &7410012401927269638
 Transform:
   m_ObjectHideFlags: 0
@@ -48240,27 +48224,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 1
   observableSearch: 2
-  ObservedComponents:
-  - {fileID: 7410012401927269637}
+  ObservedComponents: []
   sceneViewId: 233
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &7410012401927269643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7410012401927106854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!114 &7410012401927269644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48280,7 +48247,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 7410012401927269643}
+  - {fileID: 0}
   sceneViewId: 234
   InstantiationId: 0
   isRuntimeInstantiated: 0
