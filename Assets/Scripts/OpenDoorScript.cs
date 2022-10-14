@@ -23,7 +23,7 @@ public class OpenDoorScript : MonoBehaviour
       }
       
 
-      animatorLocker = GameObject.Find("lock (1)/Body").GetComponent<Animator>();
+      animatorLocker = GameObject.Find("lock (1)/NurbsPath").GetComponent<Animator>();
     }
 
     // Update is called once per frame
