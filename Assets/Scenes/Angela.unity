@@ -14205,9 +14205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d7f630fe2506c43829662017fbecd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstPosition: {x: -8.18, y: 0.48, z: -14.1}
+  firstPosition: {x: -24.18, y: 0, z: -8.16}
   firstRotation: {x: 0, y: -0.70710677, z: 0, w: 0.70710677}
-  secondPosition: {x: -8.18, y: 0.48, z: -14.1}
+  secondPosition: {x: -24.18, y: 0, z: -19.96}
 --- !u!114 &767633738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44683,7 +44683,7 @@ GameObject:
   - component: {fileID: 2091116830}
   - component: {fileID: 2091116829}
   m_Layer: 6
-  m_Name: texto
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
