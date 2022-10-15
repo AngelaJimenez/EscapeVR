@@ -2766,7 +2766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6186277785992733396}
   - component: {fileID: 8551954884688135784}
-  - component: {fileID: 8020999152147309558}
+  - component: {fileID: 779280998827277475}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -2806,8 +2806,8 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!65 &8020999152147309558
-BoxCollider:
+--- !u!135 &779280998827277475
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2817,8 +2817,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06011057, y: 0.110272646, z: 0.19243526}
-  m_Center: {x: -0.026455164, y: -0.032283902, z: -0.022160053}
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4259946842748418117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,7 +3836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6180110164236116068}
   - component: {fileID: 4897288998462381184}
-  - component: {fileID: 5702948163088413856}
+  - component: {fileID: 6679217735495269923}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -3876,8 +3876,8 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!65 &5702948163088413856
-BoxCollider:
+--- !u!135 &6679217735495269923
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3887,5 +3887,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.075838566, y: 0.13418436, z: 0.17424965}
-  m_Center: {x: 0.028985739, y: -0.030954123, z: -0.03358841}
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
