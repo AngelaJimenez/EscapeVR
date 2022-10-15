@@ -6,7 +6,7 @@ public class buttonjail3 : MonoBehaviour
 {
     public pistajail3controller controller; 
     public int id;
-     void OnCollisionEnter(Collision collision)
+     void OnTriggerEnter(Collider other)
     {
         controller.check(id);
     }
