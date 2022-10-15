@@ -23,10 +23,11 @@ public class pistajail3controller : MonoBehaviour
     private int finalstate=-1;
 
  void Start() {
-for (int i = 0; i < solution.Length; i++)
-{
-     solution[i]= -1;
-}           
+                for (int i = 0; i < solution.Length; i++)
+                {
+                    solution[i]=-1;
+                    boxes[i].GetComponent<Renderer>().material= normal;
+                }
         }
 
    public void check(int id)
