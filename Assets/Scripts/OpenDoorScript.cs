@@ -32,34 +32,13 @@ public class OpenDoorScript : MonoBehaviour
 
       if((this.transform.localRotation.x>0.4f ||this.transform.localRotation.x<-0.3f) && !cambio)
       {
-        if(!(puerta[0].gameObject.name=="Cell_Door_3"))
-        {
 
           estado1 = animator1.GetBool("Open");
           animator1.SetBool("Open",!estado1);
-        }
-        else{
-              if(animatorLocker.GetBool("Open")||! animatorLocker.gameObject.active){
-
-
-                    estado1 = animator1.GetBool("Open");
-                  animator1.SetBool("Open",!estado1);
-
-              }
-            }
         if(puerta.Length>1)
         {
-            if(!(puerta[1].gameObject.name=="Cell_Door_3"))
-          {
             estado2 = animator2.GetBool("Open");
             animator2.SetBool("Open",!estado2);
-          }
-          else{
-            if(animatorLocker.GetBool("Open")){
-                estado2 = animator2.GetBool("Open");
-                animator2.SetBool("Open", !estado2);
-
-                    }
 
         }
             
