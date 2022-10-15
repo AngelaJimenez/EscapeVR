@@ -30704,7 +30704,7 @@ MonoBehaviour:
   right: {fileID: 2100000, guid: 770252512d7aa384f9702eb0c25c4560, type: 2}
   wrong: {fileID: 2100000, guid: ad483e1d92027b64e99ef960cde5bcc2, type: 2}
   selected: {fileID: 2100000, guid: 496118fea7362c74882616bc016fca33, type: 2}
-  normal: {fileID: 2100000, guid: cfc9e294613d5844090c217e5ea99698, type: 2}
+  normal: {fileID: 2100000, guid: d669ff18fc1540d488f9dc13e9b6e176, type: 2}
   door: {fileID: 1468448177}
 --- !u!1001 &1693522851
 PrefabInstance:
