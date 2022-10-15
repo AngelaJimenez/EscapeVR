@@ -6,7 +6,6 @@ public class OpenDoorScript : MonoBehaviour
 {
     public GameObject[] puerta;
     private Animator animator1;
-    private Animator animatorLocker;
     private Animator animator2;
     private bool estado1;
     private bool estado2;
@@ -23,7 +22,6 @@ public class OpenDoorScript : MonoBehaviour
       }
       
 
-      animatorLocker = GameObject.Find("lock (1)/NurbsPath").GetComponent<Animator>();
     }
 
     // Update is called once per frame
