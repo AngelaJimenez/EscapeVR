@@ -28,6 +28,7 @@ public class pistajail3controller : MonoBehaviour
                     solution[i]=-1;
                     boxes[i].GetComponent<Renderer>().material= normal;
                 }
+                dooranimator= door.GetComponent<Animator>();
         }
 
    public void check(int id)
