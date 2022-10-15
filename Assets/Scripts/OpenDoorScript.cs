@@ -42,7 +42,7 @@ public class OpenDoorScript : MonoBehaviour
 
         }
             
-        }
+        
         
           cambio = true;
         
