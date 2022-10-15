@@ -16292,8 +16292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
 --- !u!1001 &951054650
 PrefabInstance:
@@ -24628,8 +24628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
 --- !u!1001 &1388127142
 PrefabInstance:
@@ -40510,6 +40510,7 @@ GameObject:
   - component: {fileID: 7410012401927269636}
   - component: {fileID: 7410012401927269635}
   - component: {fileID: 7410012401927269642}
+  - component: {fileID: 7410012401927269643}
   m_Layer: 0
   m_Name: rotation_axis_pointer_hour
   m_TagString: Untagged
@@ -40529,6 +40530,7 @@ GameObject:
   - component: {fileID: 7410012401927269641}
   - component: {fileID: 7410012401927269639}
   - component: {fileID: 7410012401927269644}
+  - component: {fileID: 7410012401927269645}
   m_Layer: 0
   m_Name: rotation_axis_pointer_minutes
   m_TagString: Untagged
@@ -40760,10 +40762,27 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 1
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7410012401927269643}
   sceneViewId: 233
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7410012401927269643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410012401927106850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &7410012401927269644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40782,10 +40801,27 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 1
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7410012401927269645}
   sceneViewId: 234
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7410012401927269645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410012401927106854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!4 &7410012401927269646
 Transform:
   m_ObjectHideFlags: 0
