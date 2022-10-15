@@ -13,10 +13,12 @@ public class leverBannerMove : MonoBehaviour
     private bool isAnimating;
     private bool onProcess;
     
-
+    public Quaternion firstrotation =new Quaternion(-0.606878221f,0,0,0.794794917f);
     // Start is called before the first frame update
     void Start()
     {
+        
+        this.gameObject.transform.rotation = Quaternion.Euler(new Vector3(285.271484f,0,0));
         trigger= false;
         finish = false;
         timer=0;
