@@ -10,6 +10,7 @@ TagManager:
   - gear1
   - gear2
   - keyChesGears
+  - potion
   layers:
   - Default
   - TransparentFX
