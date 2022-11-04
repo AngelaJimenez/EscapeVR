@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
 
 public class couldronPotionsFunctionality : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public GameObject puerta;
+    public Vector3 aparicion;
+    private Animator animator1;
+    private bool estado1;
 
     private int[] cafe;
     private int[] chocolate;
@@ -19,6 +24,9 @@ public class couldronPotionsFunctionality : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        animator1 = puerta.GetComponent<Animator>();
+
         cafe = new int[]{1,1,0,0,1,0,0,0,0,0,0};
         chocolate = new int[]{1,0,1,1,0,0,0,0,0,0,0};
         leche = new int[]{0,1,0,1,0,1,0,0,0,0,0};
@@ -64,19 +72,69 @@ public class couldronPotionsFunctionality : MonoBehaviour
             mezcla[5] += 1;
         }
 
+        
+
        
        }
     }
 
-    void CheckMix()
+    public void checkMix()
     {
-        for(int i = 0;i<mezcla.Length;i++)
-        {
-            if(mezcla==cafe|| mezcla == chocolate || mezcla == azucar || mezcla == leche)
+        if(comparar(mezcla,cafe))
             {
-                
+                audioSource.Play();
+                PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
             }
+        if(comparar(mezcla,chocolate))
+        {
+          audioSource.Play();
+          PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
         }
+        if(comparar(mezcla,leche))
+        {
+          audioSource.Play();
+          PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
+        }
+        if(comparar(mezcla,azucar))
+        {
+          audioSource.Play();
+          PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
+        }
+        if(comparar(mezcla,crema))
+        {
+          audioSource.Play();
+          PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
+        }
+        if(comparar(mezcla,final))
+        {
+          audioSource.Play();
+          estado1 = animator1.GetBool("Open");
+          animator1.SetBool("Open",!estado1);
+        }
+    }
+
+    private bool comparar(int[] a1, int[] a2)
+    {
+
+      if(a1.Length!=a2.Length)
+      {
+        return false;
+      }
+
+      for(int i = 0;i<a1.Length;i++)
+      {
+        if(a1[i]!=a2[i])
+        {
+          return false;
+        }
+      }
+
+      return true;
+    }
+  
+    void resetMix()
+    {
+      mezcla = new int[]{};
     }
 
 }

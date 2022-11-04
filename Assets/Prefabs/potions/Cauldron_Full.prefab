@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 4088212520682731142}
   - component: {fileID: 7326509070077454416}
   - component: {fileID: 5116727346263031449}
-  - component: {fileID: 5116727346263031454}
   m_Layer: 6
   m_Name: Cauldron_Full
   m_TagString: Untagged
@@ -256,15 +255,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.72125626, y: 0.45693576, z: 0.6999626}
   m_Center: {x: -0.0036773682, y: -0.20236596, z: -0.0063877106}
---- !u!114 &5116727346263031454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6187731843058792518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31e21a68e99d44181e0e8552d66ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
