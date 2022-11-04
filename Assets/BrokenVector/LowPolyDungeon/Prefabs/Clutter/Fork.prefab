@@ -139,7 +139,7 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: -4315570115000285310, guid: e574f658d3fabcc43bdbe89b4425b18b, type: 3}
+  - {fileID: 3090219985212979909}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
