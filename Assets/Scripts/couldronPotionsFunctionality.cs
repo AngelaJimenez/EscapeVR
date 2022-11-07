@@ -99,14 +99,17 @@ public class couldronPotionsFunctionality : MonoBehaviour
 
     public void checkMix()
     {
+      Debug.Log("isChecking");
         if(comparar(mezcla,cafe))
             {
                 //audioSource.Play();
+                Debug.Log("Cafe");
                 PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
             }
         if(comparar(mezcla,chocolate))
         {
           //audioSource.Play();
+          Debug.Log("Chocolate");
           PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
         }
         if(comparar(mezcla,leche))

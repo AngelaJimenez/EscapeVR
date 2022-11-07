@@ -11,6 +11,7 @@ TagManager:
   - gear2
   - keyChesGears
   - potion
+  - cauldron
   layers:
   - Default
   - TransparentFX

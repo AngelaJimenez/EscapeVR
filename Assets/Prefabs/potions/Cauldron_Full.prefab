@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5116727346263031449}
   m_Layer: 6
   m_Name: Cauldron_Full
-  m_TagString: Untagged
+  m_TagString: cauldron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
