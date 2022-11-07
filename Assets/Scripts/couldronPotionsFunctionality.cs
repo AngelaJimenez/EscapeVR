@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class couldronPotionsFunctionality : MonoBehaviour
 {
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
     public GameObject puerta;
     public Vector3 aparicion;
     private Animator animator1;
@@ -27,6 +27,7 @@ public class couldronPotionsFunctionality : MonoBehaviour
 
         animator1 = puerta.GetComponent<Animator>();
 
+        mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
         cafe = new int[]{1,1,0,0,1,0,0,0,0,0,0};
         chocolate = new int[]{1,0,1,1,0,0,0,0,0,0,0};
         leche = new int[]{0,1,0,1,0,1,0,0,0,0,0};
@@ -72,9 +73,27 @@ public class couldronPotionsFunctionality : MonoBehaviour
             mezcla[5] += 1;
         }
 
-        
-
-       
+        if(pocion == "Cafe")
+        {
+            mezcla[6] += 1;
+        }
+         if(pocion == "Chocolate")
+        {
+          mezcla[7] += 1;
+        }
+          if(pocion == "Leche")
+        {
+          mezcla[8] += 1;
+        }
+          if(pocion == "Azucar")
+        {
+          mezcla[9] += 1;
+        }
+          if(pocion == "Crema")
+        {
+          mezcla[10] += 1;
+        }
+         
        }
     }
 
@@ -82,32 +101,32 @@ public class couldronPotionsFunctionality : MonoBehaviour
     {
         if(comparar(mezcla,cafe))
             {
-                audioSource.Play();
+                //audioSource.Play();
                 PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
             }
         if(comparar(mezcla,chocolate))
         {
-          audioSource.Play();
+          //audioSource.Play();
           PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
         }
         if(comparar(mezcla,leche))
         {
-          audioSource.Play();
+          //audioSource.Play();
           PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
         }
         if(comparar(mezcla,azucar))
         {
-          audioSource.Play();
+          //audioSource.Play();
           PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
         }
         if(comparar(mezcla,crema))
         {
-          audioSource.Play();
+          //audioSource.Play();
           PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
         }
         if(comparar(mezcla,final))
         {
-          audioSource.Play();
+          //audioSource.Play();
           estado1 = animator1.GetBool("Open");
           animator1.SetBool("Open",!estado1);
         }
@@ -135,6 +154,7 @@ public class couldronPotionsFunctionality : MonoBehaviour
     void resetMix()
     {
       mezcla = new int[]{};
+
     }
 
 }
