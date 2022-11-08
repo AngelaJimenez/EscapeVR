@@ -12,6 +12,7 @@ TagManager:
   - keyChesGears
   - potion
   - cauldron
+  - oven
   layers:
   - Default
   - TransparentFX
