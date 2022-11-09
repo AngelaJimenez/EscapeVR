@@ -20,26 +20,18 @@ public class teleportController : MonoBehaviour
     private bool needcheck=false;
     private   teleportationAreaOnChange teleporareachange;
     private TextMeshPro pista2Object;
-    private TextMeshPro pistascrollObject;
 
-    private string pistascroll = "Ten los ojos bien abiertos. Si no terminas a tiempo, el mintauro vendra por ti. Se agil como una serpiente y sal corriendo de aqui. ";
     private string deshabilitado= "ABRE LA PUERTA";
-    private string pista2= "El último invitado se fue antes de medianoche. 3 horas antes habían preparado la cena. El cocinero anuncio que el postre saldría 15 minutos después del plato principal. Después de una charla de 1 hora y 30 minutos, Amir y el invitado habían vaciado sus platos. El postre llego y Amir me envió a buscar una botella de ron. Despues de 20 minutos regrese con la botella y media hora más tarde, el invitado habría completado su visita.";
+    private string pista2= "El ï¿½ltimo invitado se fue antes de medianoche. 3 horas antes habï¿½an preparado la cena. El cocinero anuncio que el postre saldrï¿½a 15 minutos despuï¿½s del plato principal. Despuï¿½s de una charla de 1 hora y 30 minutos, Amir y el invitado habï¿½an vaciado sus platos. El postre llego y Amir me enviï¿½ a buscar una botella de ron. Despues de 20 minutos regrese con la botella y media hora mï¿½s tarde, el invitado habrï¿½a completado su visita.";
 
     private void decideclues()
     {
         pista2Object.text = deshabilitado;
 
-        pistascrollObject.text = deshabilitado;
 
         if (door_prision[4])
         {
             pista2Object.text = pista2;
-        }
-        if(door_prision[0])
-        {
-            pistascrollObject.text = pistascroll;
-
         }
     }
 
@@ -136,7 +128,6 @@ public class teleportController : MonoBehaviour
          deactivateAll();
          activeCurrent();
         pista2Object = GameObject.Find("Prison/pista2/Text").GetComponent<TextMeshPro>();
-        pistascrollObject= GameObject.Find("Prison/Scroll_Open/Text").GetComponent<TextMeshPro>();
         decideclues();
     }
     private void deactivateAll()

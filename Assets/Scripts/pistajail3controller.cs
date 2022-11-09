@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class pistajail3controller : MonoBehaviour
 {
-    private int[] solution = new int[4];
-    public int[] rightorder = new int[4];
+    private int[] solution = new int[9];
+    public int[] rightorder = new int[9];
 
     public GameObject[] boxes;
 
@@ -14,52 +14,43 @@ public class pistajail3controller : MonoBehaviour
     public Material selected;
     public Material normal;
     public GameObject door;
+    public GameObject door2;
     private Animator dooranimator;
+    private Animator dooranimator2;
 
     private float initial=0f;
     private float final=0f;
     private float delta=0f;
     private bool startTimer=false;
     private int finalstate=-1;
+    private int count=0;
 
  void Start() {
                 for (int i = 0; i < solution.Length; i++)
                 {
-                    solution[i]=-1;
+                    solution[i]=0;
                     boxes[i].GetComponent<Renderer>().material= normal;
                 }
                 dooranimator= door.GetComponent<Animator>();
+                dooranimator2= door2.GetComponent<Animator>();
         }
 
    public void check(int id)
     {
         if(finalstate!=1)
         {
-                bool isIn= false;
-    int lastcero= -1;
-    bool isfirstcero=true;
-    for (int i = 0; i < solution.Length && !isIn; i++)
-    {
-        if(id == solution[i]) {
-                isIn=true;
+            if(solution[id]==0)
+                {
+                    count +=1;
+                    solution[id]=1;
+                    Debug.Log(id);
+                boxes[id].GetComponent<Renderer>().material= selected;
+                }
+            if(count==3)
+            {
+                endingcheck();
+            }
         }
-        if(solution[i]==-1 && isfirstcero)
-        {
-            isfirstcero=false;
-            lastcero=i;
-        }
-    }
-    if(!isIn && !isfirstcero)
-    {
-        solution[lastcero]= id;
-        // change material to make it shine
-        boxes[id].GetComponent<Renderer>().material= selected;
-    }
-    if(lastcero==3)
-    {
-        endingcheck();
-    }
-    }
     }
 
     private void endingcheck(){
@@ -104,6 +95,7 @@ finalstate=1;
 
                 }
                 dooranimator.SetBool("Open",true);
+                dooranimator2.SetBool("Open",true);
                 
             }
         }
@@ -114,12 +106,13 @@ finalstate=1;
                 // reset everything
                 for (int i = 0; i < solution.Length; i++)
                 {
-                    solution[i]=-1;
+                    solution[i]=0;
                     boxes[i].GetComponent<Renderer>().material= normal;
 
                 }
                 finalstate=-1;
                 startTimer=false;
+                count=0;
             }
         }
     }
