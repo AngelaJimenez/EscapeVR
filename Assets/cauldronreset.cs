@@ -37,7 +37,7 @@ public class cauldronreset : MonoBehaviour
         }
         if(other.gameObject.tag== "oven")
         {
-            var prefabGameObject = PrefabUtility.GetCorrespondingObjectFromSource(this.gameObject);
+           
             GameObject otherPotion;
             if(InitialPosition.z>-10f)
             {

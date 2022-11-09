@@ -100,6 +100,12 @@ public class couldronPotionsFunctionality : MonoBehaviour
     public void checkMix()
     {
       Debug.Log("isChecking");
+
+        for (int i = 0; i<mezcla.Length;i++)
+        {
+            Debug.Log(mezcla[i]);
+        }
+
         if(comparar(mezcla,cafe))
             {
                 //audioSource.Play();
