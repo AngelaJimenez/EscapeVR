@@ -42,11 +42,11 @@ public class cauldronreset : MonoBehaviour
             // instanciate other in the other oven if is  gameObject.transform.position.z>2f then it is one otherwise it is another if y<-0.2f also reset
             if(InitialPosition.z>-10f)
             {
-                PhotonNetwork.Instantiate(prefabGameObject.name, positionovenleft, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(prefabGameObject.name, positionovenright, Quaternion.identity, 0);
 
             }
             else{
-                PhotonNetwork.Instantiate(prefabGameObject.name,positionovenright , Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(prefabGameObject.name, positionovenleft, Quaternion.identity, 0);
 
             }
         }
