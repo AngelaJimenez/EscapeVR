@@ -130,8 +130,7 @@ public class couldronPotionsFunctionality : MonoBehaviour
         if(comparar(mezcla,final))
         {
           //audioSource.Play();
-          estado1 = animator1.GetBool("Open");
-          animator1.SetBool("Open",!estado1);
+          animator1.SetBool("Open",true);
         }
     }
 
