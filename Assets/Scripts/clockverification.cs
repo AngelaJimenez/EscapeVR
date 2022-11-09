@@ -81,6 +81,12 @@ public class clockverification : MonoBehaviour
             anim2.SetBool("Open",true);
             tpcontroller.openRoom2();
         }
-
+         if(anim1.GetBool("Open")|| anim2.GetBool("Open"))
+         {
+            anim1.SetBool("Open",true);
+            anim2.SetBool("Open",true);
+            tpcontroller.openRoom2();
+            
+         }         
     }
 }

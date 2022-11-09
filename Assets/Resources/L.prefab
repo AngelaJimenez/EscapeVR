@@ -396,7 +396,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -459,3 +459,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 

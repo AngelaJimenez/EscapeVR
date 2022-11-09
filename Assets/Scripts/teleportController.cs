@@ -11,6 +11,7 @@ public class teleportController : MonoBehaviour
     private GameObject lastCurrent;
 
     private GameObject Room2andhallway;
+    private GameObject finalroom;
 
     private GameObject mainRoom1;
     private GameObject[] prison = new GameObject[6];
@@ -52,6 +53,10 @@ public class teleportController : MonoBehaviour
             if(t.gameObject.name== "Room2andhallway")
                 {
                 Room2andhallway=  t.gameObject;
+                }
+            if(t.gameObject.name== "Room2")
+                {
+                finalroom=  t.gameObject;
                 }
            
             if(t.gameObject.name== "mainRoom1")
@@ -125,6 +130,8 @@ public class teleportController : MonoBehaviour
         dooranimator[3]= GameObject.Find("doors/Cell_Door_6").GetComponent<Animator>();
         clockverification clock = GameObject.Find("clock").GetComponent<clockverification>();;
         clock.tpcontroller = this;
+        pistajail3controller pistaskeleton = GameObject.Find("Botones").GetComponent<pistajail3controller>();;
+        pistaskeleton.tpcontroller = this;
          deactivateAll();
          activeCurrent();
         pista2Object = GameObject.Find("Prison/pista2/Text").GetComponent<TextMeshPro>();
@@ -138,7 +145,7 @@ public class teleportController : MonoBehaviour
          }
          mainRoom1.SetActive(false);
           Room2andhallway.SetActive(false);
-
+finalroom.SetActive(false);
     }
     private void activateAll()
     {
@@ -148,6 +155,7 @@ public class teleportController : MonoBehaviour
          }
          Room2andhallway.SetActive(true);
          mainRoom1.SetActive(true);
+finalroom.SetActive(true);
     }
     private void activeCurrent()
     {
@@ -214,6 +222,10 @@ public class teleportController : MonoBehaviour
     public void openRoom2()
     {
         Room2andhallway.SetActive(true);
+    }
+    public void openfinalRoom()
+    {
+        finalroom.SetActive(true);
     }
 
     public void changecurrent(int id)

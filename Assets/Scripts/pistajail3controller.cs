@@ -17,6 +17,7 @@ public class pistajail3controller : MonoBehaviour
     public GameObject door2;
     private Animator dooranimator;
     private Animator dooranimator2;
+    public teleportController tpcontroller;
 
     private float initial=0f;
     private float final=0f;
@@ -115,5 +116,13 @@ finalstate=1;
                 count=0;
             }
         }
+
+        if(dooranimator.GetBool("Open")||dooranimator2.GetBool("Open")){
+            tpcontroller.openfinalRoom();
+                dooranimator.SetBool("Open",true);
+                dooranimator2.SetBool("Open",true);
+            
+        }
+
     }
 }
