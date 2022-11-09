@@ -8,8 +8,8 @@ public class cauldronreset : MonoBehaviour
 {
     Vector3 InitialPosition;
     Quaternion InitialRotation;
-    Vector3 positionovenright= new Vector3(-23.4699993f,0.761495471f,-19.1900005f);
-    Vector3 positionovenleft= new Vector3(-25.0480003f,0.879999995f,-8.93500042f);
+    Vector3 positionovenright= new Vector3(-23.1219997f,0.76149559f,-20.262001f);
+    Vector3 positionovenleft= new Vector3(-24.8180008f,1.06000006f,-7.79500103f);
     public string name;
     // Start is called before the first frame update
     void Start()
@@ -48,10 +48,10 @@ public class cauldronreset : MonoBehaviour
                otherPotion=  PhotonNetwork.Instantiate(name, positionovenleft, Quaternion.identity, 0);
             }
             cauldronreset code = otherPotion.GetComponent<cauldronreset>();
-            code.name= this.gameObject.name;
+            code.name= name;
             PhotonNetwork.Instantiate(name, InitialPosition, Quaternion.identity, 0);
             code = otherPotion.GetComponent<cauldronreset>();
-            code.name= this.gameObject.name;
+            code.name= name;
 
             Destroy(gameObject);
         }
@@ -59,7 +59,7 @@ public class cauldronreset : MonoBehaviour
         {
             if(InitialPosition==positionovenright || InitialPosition== positionovenleft)
             {
-                Destroy(gameObject);
+                PhotonNetwork.Destroy(gameObject);
             }
             else{
                 gameObject.transform.position= InitialPosition;
