@@ -1586,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7934203073393978785, guid: 5e61e38c879cd874f80925d64667fc28, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8238044567755640666, guid: 5e61e38c879cd874f80925d64667fc28, type: 3}
       propertyPath: m_RootOrder
@@ -23278,6 +23278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8526181607167438875, guid: a84a636a35a83fe408bd4b3d8c2b8058, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a84a636a35a83fe408bd4b3d8c2b8058, type: 3}
 --- !u!4 &1158731535 stripped
@@ -26000,7 +26004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  namy: 
 --- !u!1001 &1259640315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27533,7 +27537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  namy: 
 --- !u!1001 &1312336601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29846,7 +29850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  namy: 
 --- !u!1 &1393977365
 GameObject:
   m_ObjectHideFlags: 0
