@@ -11,6 +11,7 @@ public class cauldronreset : MonoBehaviour
     Vector3 positionovenright= new Vector3(-23.1219997f,0.76149559f,-20.262001f);
     Vector3 positionovenleft= new Vector3(-24.8180008f,1.06000006f,-7.79500103f);
     public string name;
+    private PhotonView photonview;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +20,25 @@ public class cauldronreset : MonoBehaviour
        if(name== null || name==""){
         name= gameObject.name;
        }
+        photonview = GetComponent<PhotonView>();
     }
     void Update()
     {
-// if it falls it has to reset
-    if(gameObject.transform.position.y< -1.5f){
-            gameObject.transform.position= InitialPosition;
-            gameObject.transform.rotation= InitialRotation;
-    }
+        if (photonview.IsMine)
+        {
+            // if it falls it has to reset
+            if (gameObject.transform.position.y < -1.5f)
+            {
+                gameObject.transform.position = InitialPosition;
+                gameObject.transform.rotation = InitialRotation;
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
+
+        if(photonview.IsMine)
+        { 
         if(other.gameObject.tag== "cauldron")
         {
             gameObject.transform.position= InitialPosition;
@@ -68,5 +77,6 @@ public class cauldronreset : MonoBehaviour
             }
         }
 
+    }
     }
 }

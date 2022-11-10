@@ -21,10 +21,11 @@ public class couldronPotionsFunctionality : MonoBehaviour
 
     private int[] mezcla;
 
+    private PhotonView photonview;
     // Start is called before the first frame update
     void Start()
     {
-
+        photonview = GetComponent<PhotonView>();
         animator1 = puerta.GetComponent<Animator>();
 
         mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
@@ -42,101 +43,110 @@ public class couldronPotionsFunctionality : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other) {
-       if(other.gameObject.tag== "potion")
-       {
-        string pocion = other.gameObject.name;
-        Debug.Log(other.gameObject.name);
+    void OnTriggerEnter(Collider other)
+    {
+        if (photonview.IsMine)
+        {
+            if (other.gameObject.tag == "potion")
+            {
+                cauldronreset code = other.gameObject.GetComponent<cauldronreset>();
+          
+                string pocion = code.name;
+                Debug.Log(pocion);
 
-        if(pocion == "E")
-        {
-            mezcla[0] += 1;
-        }
-          if(pocion == "G")
-        {
-            mezcla[1] += 1;
-        }
-          if(pocion == "H")
-        {
-            mezcla[2] += 1;
-        }
-          if(pocion == "J")
-        {
-            mezcla[3] += 1;
-        }
-          if(pocion == "K")
-        {
-            mezcla[4] += 1;
-        }
-          if(pocion == "L")
-        {
-            mezcla[5] += 1;
-        }
+                if (pocion == "E")
+                {
+                    mezcla[0] += 1;
+                }
+                if (pocion == "G")
+                {
+                    mezcla[1] += 1;
+                }
+                if (pocion == "H")
+                {
+                    mezcla[2] += 1;
+                }
+                if (pocion == "J")
+                {
+                    mezcla[3] += 1;
+                }
+                if (pocion == "K")
+                {
+                    mezcla[4] += 1;
+                }
+                if (pocion == "L")
+                {
+                    mezcla[5] += 1;
+                }
 
-        if(pocion == "Cafe")
-        {
-            mezcla[6] += 1;
+                if (pocion == "Cafe")
+                {
+                    mezcla[6] += 1;
+                }
+                if (pocion == "Chocolate")
+                {
+                    mezcla[7] += 1;
+                }
+                if (pocion == "Leche")
+                {
+                    mezcla[8] += 1;
+                }
+                if (pocion == "Azucar")
+                {
+                    mezcla[9] += 1;
+                }
+                if (pocion == "Crema")
+                {
+                    mezcla[10] += 1;
+                }
+
+            }
         }
-         if(pocion == "Chocolate")
-        {
-          mezcla[7] += 1;
-        }
-          if(pocion == "Leche")
-        {
-          mezcla[8] += 1;
-        }
-          if(pocion == "Azucar")
-        {
-          mezcla[9] += 1;
-        }
-          if(pocion == "Crema")
-        {
-          mezcla[10] += 1;
-        }
-         
-       }
     }
 
     public void checkMix()
     {
-      Debug.Log("isChecking");
-
-        for (int i = 0; i<mezcla.Length;i++)
+        if (photonview.IsMine)
         {
-            Debug.Log(mezcla[i]);
-        }
+            Debug.Log("isChecking");
 
-        if(comparar(mezcla,cafe))
+            for (int i = 0; i < mezcla.Length; i++)
+            {
+                Debug.Log(mezcla[i]);
+            }
+
+            if (comparar(mezcla, cafe))
             {
                 //audioSource.Play();
                 Debug.Log("Cafe");
                 PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
             }
-        if(comparar(mezcla,chocolate))
-        {
-          //audioSource.Play();
-          Debug.Log("Chocolate");
-          PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
-        }
-        if(comparar(mezcla,leche))
-        {
-          //audioSource.Play();
-          PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
-        }
-        if(comparar(mezcla,azucar))
-        {
-          //audioSource.Play();
-          PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
-        }
-        if(comparar(mezcla,crema))
-        {
-          //audioSource.Play();
-          PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
-        }
-        if(comparar(mezcla,final))
-        {
-          //audioSource.Play();
-          animator1.SetBool("Open",true);
+            if (comparar(mezcla, chocolate))
+            {
+                //audioSource.Play();
+                Debug.Log("Chocolate");
+                PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
+            }
+            if (comparar(mezcla, leche))
+            {
+                //audioSource.Play();
+                PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
+            }
+            if (comparar(mezcla, azucar))
+            {
+                //audioSource.Play();
+                PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
+            }
+            if (comparar(mezcla, crema))
+            {
+                //audioSource.Play();
+                PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
+            }
+            if (comparar(mezcla, final))
+            {
+                //audioSource.Play();
+                animator1.SetBool("Open", true);
+            }
         }
     }
 
