@@ -5,6 +5,7 @@ using Photon.Pun;
 using System.IO;
 using UnityEditor;
 public class cauldronreset :  MonoBehaviourPun
+// , IPunObservable
 {
     Vector3 InitialPosition;
     Quaternion InitialRotation;
@@ -80,12 +81,24 @@ public class cauldronreset :  MonoBehaviourPun
         }
 
     }
-
+    }
     [PunRPC]
      void RPC_ChangeName(string name)
      {
         this.gameObject.name =name;
-       
      }
-    }
+
+    //  void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    // {
+    //     if (stream.isWriting)
+    //     {
+        
+    //     stream.SendNext(name);
+    //     }
+    //     else
+    //     {
+        
+    //     name = (string)stream.ReceiveNext();
+    //     }
+    // }
 }
