@@ -58,7 +58,8 @@ public class cauldronreset : MonoBehaviour
             }
             cauldronreset code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
-            PhotonNetwork.Instantiate(name, InitialPosition, Quaternion.identity, 0);
+            otherPotion.gameObject.name= name;
+            otherPotion= PhotonNetwork.Instantiate(name, InitialPosition, Quaternion.identity, 0);
             code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
 
