@@ -106,8 +106,6 @@ public class couldronPotionsFunctionality : MonoBehaviour
 
     public void checkMix()
     {
-        if (photonview.IsMine)
-        {
             Debug.Log("isChecking");
 
             for (int i = 0; i < mezcla.Length; i++)
@@ -147,7 +145,6 @@ public class couldronPotionsFunctionality : MonoBehaviour
                 //audioSource.Play();
                 animator1.SetBool("Open", true);
             }
-        }
     }
 
     private bool comparar(int[] a1, int[] a2)
