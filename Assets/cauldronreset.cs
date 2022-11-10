@@ -11,6 +11,8 @@ public class cauldronreset :  MonoBehaviourPun
     Vector3 positionovenright= new Vector3(-23.1219997f,0.76149559f,-20.262001f);
     Vector3 positionovenleft= new Vector3(-24.8180008f,1.06000006f,-7.79500103f);
     public string namy;
+    GameObject otherPotion;
+
     private PhotonView photonview;
     // Start is called before the first frame update
     void Start()
@@ -44,7 +46,6 @@ public class cauldronreset :  MonoBehaviourPun
         if(other.gameObject.tag== "oven")
         {
            
-            GameObject otherPotion;
             if(InitialPosition.z>-10f)
             {
                 otherPotion= PhotonNetwork.Instantiate(name, positionovenright, Quaternion.identity, 0);
@@ -55,9 +56,9 @@ public class cauldronreset :  MonoBehaviourPun
             }
             cauldronreset code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
-            photonview.RPC("RPC_ChangeName", RpcTarget.All, name, otherPotion);
+            photonview.RPC("RPC_ChangeName", RpcTarget.All, name);
             otherPotion= PhotonNetwork.Instantiate(name, InitialPosition, Quaternion.identity, 0);
-            photonview.RPC("RPC_ChangeName", RpcTarget.All, name, otherPotion);
+            photonview.RPC("RPC_ChangeName", RpcTarget.All, name);
             code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
 
@@ -79,10 +80,13 @@ public class cauldronreset :  MonoBehaviourPun
     }
 
     [PunRPC]
-     void RPC_ChangeName(string name, GameObject obj)
+     void RPC_ChangeName(string name)
      {
-         obj.gameObject.name =name;
-         
+        gameObject.name =name;
+        if(otherPotion)
+        {
+            otherPotion.name=name;
+        }
      }
     }
 }
