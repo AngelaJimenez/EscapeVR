@@ -55,9 +55,9 @@ public class cauldronreset : MonoBehaviour
             }
             cauldronreset code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
-            otherPotion.gameObject.name= name;
+            photonview.RPC("RPC_ChangeName", RpcTarget.All, name, otherPotion);
             otherPotion= PhotonNetwork.Instantiate(name, InitialPosition, Quaternion.identity, 0);
-            otherPotion.gameObject.name= name;
+            photonview.RPC("RPC_ChangeName", RpcTarget.All, name, otherPotion);
             code = otherPotion.GetComponent<cauldronreset>();
             code.name= name;
 
@@ -77,5 +77,12 @@ public class cauldronreset : MonoBehaviour
         }
 
     }
+
+    [PunRPC]
+     void RPC_ChangeName(string name, GameObject obj)
+     {
+         obj.gameObject.name =name;
+         
+     }
     }
 }
