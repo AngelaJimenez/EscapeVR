@@ -10,16 +10,13 @@ public class cauldronreset : MonoBehaviour
     Quaternion InitialRotation;
     Vector3 positionovenright= new Vector3(-23.1219997f,0.76149559f,-20.262001f);
     Vector3 positionovenleft= new Vector3(-24.8180008f,1.06000006f,-7.79500103f);
-    public string name;
+    public string namy;
     private PhotonView photonview;
     // Start is called before the first frame update
     void Start()
     {
         InitialPosition = gameObject.transform.position;
         InitialRotation = gameObject.transform.rotation;
-       if(name== null || name==""){
-        name= gameObject.name;
-       }
         photonview = GetComponent<PhotonView>();
     }
     void Update()
