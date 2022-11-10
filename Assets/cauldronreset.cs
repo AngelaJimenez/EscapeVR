@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using System.IO;
 using UnityEditor;
-public class cauldronreset : MonoBehaviour
+public class cauldronreset :  MonoBehaviourPun
 {
     Vector3 InitialPosition;
     Quaternion InitialRotation;
