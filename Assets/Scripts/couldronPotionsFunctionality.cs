@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class couldronPotionsFunctionality : MonoBehaviour
+public class couldronPotionsFunctionality : MonoBehaviourPun
 {
     //public AudioSource audioSource;
     public GameObject puerta;
@@ -48,13 +48,18 @@ public class couldronPotionsFunctionality : MonoBehaviour
         if (photonview.IsMine)
         {
             if (other.gameObject.tag == "potion")
-            {
-                cauldronreset code = other.gameObject.GetComponent<cauldronreset>();
-          
-                string pocion = code.name;
+            { 
+                string pocion = other.gameObject.name;
                 Debug.Log(pocion);
+                dropPotion(pocion);
+            }
+        }
+    }
 
-                if (pocion == "E")
+    [PunRPC]
+    public void dropPotion(string pocion)
+    {
+         if (pocion == "E")
                 {
                     mezcla[0] += 1;
                 }
@@ -99,11 +104,9 @@ public class couldronPotionsFunctionality : MonoBehaviour
                 {
                     mezcla[10] += 1;
                 }
-
-            }
-        }
     }
 
+    [PunRPC]
     public void checkMix()
     {
             Debug.Log("isChecking");
@@ -166,9 +169,11 @@ public class couldronPotionsFunctionality : MonoBehaviour
       return true;
     }
   
-    void resetMix()
+    [PunRPC]
+    public void resetMix()
     {
-      mezcla = new int[]{};
+      mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
+      Debug.Log("Se reseteo");
 
     }
 

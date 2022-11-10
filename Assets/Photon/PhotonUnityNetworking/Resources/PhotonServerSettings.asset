@@ -45,6 +45,9 @@ MonoBehaviour:
   - <OnTriggerEnter>g__RPC_ChangeName|8_0
   - <OnTriggerEnter>g__RPC_ChangeName|9_0
   - RPC_ChangeName
+  - checkMix
+  - dropPotion
+  - resetMix
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
