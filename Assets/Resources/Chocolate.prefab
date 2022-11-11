@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 8627964514661776469}
   - component: {fileID: 3252035133510309872}
   - component: {fileID: 1024383876930364702}
+  - component: {fileID: 2894963019545085217}
   m_Layer: 0
   m_Name: Chocolate
   m_TagString: Untagged
@@ -446,3 +447,16 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &2894963019545085217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5363591305118867127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namy: 

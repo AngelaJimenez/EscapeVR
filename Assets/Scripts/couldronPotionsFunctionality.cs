@@ -148,6 +148,8 @@ public class couldronPotionsFunctionality : MonoBehaviourPun
                 //audioSource.Play();
                 animator1.SetBool("Open", true);
             }
+
+            mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
     }
 
     private bool comparar(int[] a1, int[] a2)

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2200571327831172122}
   - component: {fileID: 5148609476052951324}
   - component: {fileID: 2086074868639064414}
+  - component: {fileID: 5542183259620223376}
   m_Layer: 0
   m_Name: Azucar
   m_TagString: Untagged
@@ -274,6 +275,19 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &5542183259620223376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363520052128300815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f203721a8597b3408901f45e85c0150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namy: 
 --- !u!1 &5546910009560905426
 GameObject:
   m_ObjectHideFlags: 0
