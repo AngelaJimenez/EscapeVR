@@ -115,40 +115,49 @@ public class couldronPotionsFunctionality : MonoBehaviourPun
             {
                 Debug.Log(mezcla[i]);
             }
-
+            GameObject instance;
             if (comparar(mezcla, cafe))
             {
                 //audioSource.Play();
                 Debug.Log("Cafe");
-                PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
+                instance = PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
+                PhotonView pvcreated = instance.GetComponent<PhotonView>();
+            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Cafe");
             }
             if (comparar(mezcla, chocolate))
             {
                 //audioSource.Play();
                 Debug.Log("Chocolate");
-                PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
+                instance = PhotonNetwork.Instantiate("Chocolate", aparicion, Quaternion.identity, 0);
+                PhotonView pvcreated = instance.GetComponent<PhotonView>();
+            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Chocolate");
             }
             if (comparar(mezcla, leche))
             {
                 //audioSource.Play();
-                PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
+                instance = PhotonNetwork.Instantiate("Leche", aparicion, Quaternion.identity, 0);
+                PhotonView pvcreated = instance.GetComponent<PhotonView>();
+            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Leche");
             }
             if (comparar(mezcla, azucar))
             {
                 //audioSource.Play();
-                PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
+                instance = PhotonNetwork.Instantiate("Azucar", aparicion, Quaternion.identity, 0);
+                PhotonView pvcreated = instance.GetComponent<PhotonView>();
+            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Azucar");
             }
             if (comparar(mezcla, crema))
             {
                 //audioSource.Play();
-                PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
+                instance = PhotonNetwork.Instantiate("Crema", aparicion, Quaternion.identity, 0);
+                PhotonView pvcreated = instance.GetComponent<PhotonView>();
+            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Crema");
             }
             if (comparar(mezcla, final))
             {
                 //audioSource.Play();
                 animator1.SetBool("Open", true);
             }
-
             mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
     }
 
