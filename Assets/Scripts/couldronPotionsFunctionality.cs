@@ -30,9 +30,9 @@ public class couldronPotionsFunctionality : MonoBehaviourPun
 
         mezcla = new int[]{0,0,0,0,0,0,0,0,0,0,0};
         cafe = new int[]{1,1,0,0,1,0,0,0,0,0,0};
-        chocolate = new int[]{1,0,1,1,0,0,0,0,0,0,0};
-        leche = new int[]{0,1,0,1,0,1,0,0,0,0,0};
-        azucar = new int[]{0,0,1,0,1,0,0,0,0,0,0};
+        chocolate = new int[]{0,0,1,1,0,1,0,0,0,0,0};
+        leche = new int[]{0,1,1,0,1,0,0,0,0,0,0};
+        azucar = new int[]{1,0,0,0,0,1,0,0,0,0,0};
         crema = new int[]{0,0,0,0,0,0,0,0,1,1,0};
         final = new int[]{0,0,0,0,0,0,1,1,1,1,1};
     }
