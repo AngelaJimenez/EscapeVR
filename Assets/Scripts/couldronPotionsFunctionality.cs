@@ -5,7 +5,6 @@ using Photon.Pun;
 
 public class couldronPotionsFunctionality : MonoBehaviourPun
 {
-    //public AudioSource audioSource;
     public GameObject puerta;
     public Vector3 aparicion;
     private Animator animator1;
@@ -118,11 +117,11 @@ public class couldronPotionsFunctionality : MonoBehaviourPun
             GameObject instance;
             if (comparar(mezcla, cafe))
             {
-                //audioSource.Play();
+                FindObjectOfType<AudioManager>().Play("Correcto");
                 Debug.Log("Cafe");
                 instance = PhotonNetwork.Instantiate("Cafe", aparicion, Quaternion.identity, 0);
                 PhotonView pvcreated = instance.GetComponent<PhotonView>();
-            pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Cafe");
+                pvcreated.RPC("RPC_ChangeName", RpcTarget.All, "Cafe");
             }
             if (comparar(mezcla, chocolate))
             {
