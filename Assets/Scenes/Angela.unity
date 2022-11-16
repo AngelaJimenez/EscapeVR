@@ -42112,6 +42112,11 @@ MonoBehaviour:
     volume: 0.722
     pitch: 1
     source: {fileID: 0}
+  - name: Splash
+    clip: {fileID: 8300000, guid: 6c3b3264f23585344bef52467855708c, type: 3}
+    volume: 0.722
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1001 &1971038047
 PrefabInstance:
   m_ObjectHideFlags: 0

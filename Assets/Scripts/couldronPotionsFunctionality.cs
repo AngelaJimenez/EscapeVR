@@ -58,7 +58,8 @@ public class couldronPotionsFunctionality : MonoBehaviourPun
     [PunRPC]
     public void dropPotion(string pocion)
     {
-
+                FindObjectOfType<AudioManager>().Play("Splash");
+        
         if (pocion == "E")
                 {
                     mezcla[0] += 1;
