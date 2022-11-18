@@ -8,9 +8,11 @@ public class openwithKey : MonoBehaviour
         private bool isKey=false;
         private Animator animator;
         private GameObject finalpath;
+        public GameObject skeleton;
+        private Animator skeletonAnimator;
  void Start() {
         animator= door.GetComponent<Animator>();
-
+        skeletonAnimator= skeleton.GetComponent<Animator>();
         
 }
  void Update() {
@@ -36,6 +38,8 @@ isKey= true;
     {
         animator.SetBool("Open",true);
         finalpath.SetActive(true);
+        skeletonAnimator.SetBool("finish",true);
+
     }
 }
   
