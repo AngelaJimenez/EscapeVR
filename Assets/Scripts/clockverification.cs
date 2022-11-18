@@ -46,7 +46,7 @@ public class clockverification : MonoBehaviour
          }else if(hours.transform.eulerAngles.z>325f && hours.transform.eulerAngles.z<335f &&waitinghours  )
          {
             deltatime =  Time.time - timeh;
-            if( deltatime>1.5f )
+            if( deltatime>3f )
             {
                 perfecthours=true;
 
@@ -66,7 +66,7 @@ public class clockverification : MonoBehaviour
          }
          else if(minutes.transform.eulerAngles.z>203f && minutes.transform.eulerAngles.z<217f && waitingmin){
             deltatime = Time.time - timem;
-            if( deltatime>1.5f)
+            if( deltatime>3f)
             {
                 perfectmin=true;
             }

@@ -18674,6 +18674,10 @@ PrefabInstance:
       value: gear2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
       propertyPath: m_TagString
       value: gear1
       objectReference: {fileID: 0}
@@ -27032,6 +27036,7 @@ PrefabInstance:
     - {fileID: -4654597814141917001, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
     - {fileID: 3657934250842913986, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
     - {fileID: 3758139886907305601, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
+    - {fileID: 2065851004752694953, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
 --- !u!4 &1298478305 stripped
 Transform:
@@ -27653,6 +27658,7 @@ PrefabInstance:
     - {fileID: -4654597814141917001, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
     - {fileID: 3657934250842913986, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
     - {fileID: 3758139886907305601, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
+    - {fileID: 2065851004752694953, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
 --- !u!4 &1320574113 stripped
 Transform:
@@ -27823,7 +27829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.322
+      value: -3.059
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27831,7 +27837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.886
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29185,6 +29191,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
       propertyPath: m_Name
       value: gear1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d508cc62c23fa7448fb1fc6b58db5a4, type: 3}
       propertyPath: m_TagString
@@ -32404,7 +32414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.714
+      value: -1.4509995
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32412,7 +32422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.886
+      value: 7.030001
       objectReference: {fileID: 0}
     - target: {fileID: 4883379290849458593, guid: 571f5dec7e36f1d44bd714b42ba5c2ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -39224,6 +39234,19 @@ MonoBehaviour:
   sceneViewId: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1820353741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820353727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14577306cfdff8f439dd76e6e8fbe0d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 260076446}
 --- !u!1001 &1825912145
 PrefabInstance:
   m_ObjectHideFlags: 0
