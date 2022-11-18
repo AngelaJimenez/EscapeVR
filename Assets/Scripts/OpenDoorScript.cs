@@ -34,6 +34,7 @@ public class OpenDoorScript : MonoBehaviour
 
           estado1 = animator1.GetBool("Open");
           animator1.SetBool("Open",!estado1);
+
         if(puerta.Length>1)
         {
             estado2 = animator2.GetBool("Open");
@@ -42,7 +43,6 @@ public class OpenDoorScript : MonoBehaviour
         }
             
         
-        
           cambio = true;
         
       }
@@ -50,7 +50,6 @@ public class OpenDoorScript : MonoBehaviour
       {
         cambio = false;
         
-
       }
 
     }
