@@ -136,7 +136,7 @@ public class teleportController : MonoBehaviour
          activeCurrent();
         pista2Object = GameObject.Find("Prison/pista2/Text").GetComponent<TextMeshPro>();
         decideclues();
-         dooranimator[0].SetBool("Open",true);
+        
     }
     private void deactivateAll()
     {
@@ -165,6 +165,7 @@ finalroom.SetActive(true);
     // Update is called once per frame
     void Update()
     {
+         
         for (int i = 0; i < 6; i++)
         {
             bool current_bool = dooranimator[i].GetBool("Open");
