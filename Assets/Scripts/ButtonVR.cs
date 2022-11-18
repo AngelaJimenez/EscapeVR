@@ -32,21 +32,19 @@ public class ButtonVR : MonoBehaviour
             butoncontrollertable.verifychanges(idbutton);
             button.transform.localPosition= firstPositionButton- new Vector3(0,0.02f,0);
             presser= other.gameObject;
+            button.gameObject.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
             onPress.Invoke();
             isPressed= true;
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.gameObject == presser)
-        {
-            onRelease.Invoke();
-        }
-    }
-
     public void unpressButton()
     {
         button.transform.localPosition= firstPositionButton;
+        button.gameObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+
+        onRelease.Invoke();
+
     }
     public bool getButton()
     {
