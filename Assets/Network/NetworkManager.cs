@@ -17,7 +17,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Trying to connect to server");
     }
-
+    public override void OnPlayerLeftRoom(Player newPlayer)
+    {
+        Debug.Log("A new player LEFT the room");
+        base.OnPlayerEnteredRoom(newPlayer);
+    }
+    
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected to server");
