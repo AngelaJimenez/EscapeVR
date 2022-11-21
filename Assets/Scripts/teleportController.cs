@@ -136,7 +136,6 @@ public class teleportController : MonoBehaviour
          activeCurrent();
         pista2Object = GameObject.Find("Prison/pista2/Text").GetComponent<TextMeshPro>();
         decideclues();
-        dooranimator[0].SetBool("Open",true);
         
     }
     private void deactivateAll()
