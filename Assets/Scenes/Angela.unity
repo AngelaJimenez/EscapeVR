@@ -11379,7 +11379,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "E + G + K\n\nH + J + L\n\nG + H + K \n\nE + L\n"
+  m_text: 'E + G + K
+
+
+    H + J + L
+
+
+    G + J
+
+
+    E + L
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 904df3fc54f16ec4a8a0c28f14cfdb9f, type: 2}
   m_sharedMaterial: {fileID: 1446084974367385459, guid: 904df3fc54f16ec4a8a0c28f14cfdb9f, type: 2}

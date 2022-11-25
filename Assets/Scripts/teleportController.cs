@@ -23,7 +23,7 @@ public class teleportController : MonoBehaviour
     private TextMeshPro pista2Object;
 
     private string deshabilitado= "ABRE LA PUERTA";
-    private string pista2= "El �ltimo invitado se fue antes de medianoche. 3 horas antes hab�an preparado la cena. El cocinero anuncio que el postre saldr�a 15 minutos despu�s del plato principal. Despu�s de una charla de 1 hora y 30 minutos, Amir y el invitado hab�an vaciado sus platos. El postre llego y Amir me envi� a buscar una botella de ron. Despues de 20 minutos regrese con la botella y media hora m�s tarde, el invitado habr�a completado su visita.";
+    private string pista2= "El último invitado se fue antes de medianoche. 3 horas antes habían preparado la cena. El cocinero anuncio que el postre saldría 15 minutos después del plato principal. Después de una charla de 1 hora y 30 minutos, Amir y el invitado habían vaciado sus platos. El postre llego y Amir me envió a buscar una botella de ron. Despues de 20 minutos regrese con la botella y media hora más tarde, el invitado habría completado su visita.";
 
     private void decideclues()
     {
