@@ -5,12 +5,14 @@ Este proyecto es un juego de puzzles cooperativo (2 jugadores) en realidad virtu
 ## Colaboradores
 
  - Angela Jimenez
+ [LinkedIn](https://www.linkedin.com/in/angelajimenezf/)
 
  - Andrés Rincón
+ [LinkedIn](https://www.linkedin.com/in/andresrinconp/)
 
  ## Descripción
 
- El proyecto es un juego cooperativo de realidad virtual que sigue la dinamica de un escape room. Esto significa que los jugadores, en este caso dos, estaran sumergidos en un entorno virtual ambientado en la epoca medieval y estos tendra la tarea de resolver distintos acertijos para lograr escapar de su encierro. Asimismo, los acertijos a los cuales se enfrentaran evaluaran sus habilidades para trabajar en equipo y comunicar sus ideas.
+ El proyecto es un juego cooperativo de realidad virtual que sigue la dinámica de un escape room. Esto significa que los jugadores, en este caso dos, estarán sumergidos en un entorno virtual ambientado en la época medieval y estos tendrán la tarea de resolver distintos acertijos para lograr escapar de su encierro. Asimismo, los acertijos a los cuales se enfrentarán evaluarán sus habilidades para trabajar en equipo y comunicar sus ideas.
 
  ## Objetivo
 
@@ -57,4 +59,4 @@ https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pa
 4. Conectar las gafas de realidad virtual y habilitar la opción de quest link. **El juego se debe ejecutar desde el computador, por lo cual es necesario la conexión por cable**
 5. Verificar la conexión a internet.
 6. Debido a que el juego es de dos jugadores se debera repetir estos pasos en otro computador.
-7. Abrir el juego en unity en ambos computadores y darle al boton de Play. 
+7. Abrir el juego en unity en ambos computadores y darle al botón de Play. 
