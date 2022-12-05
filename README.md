@@ -59,7 +59,7 @@ https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pa
 4. Conectar las gafas de realidad virtual y habilitar la opción de quest link. **El juego se debe ejecutar desde el computador, por lo cual es necesario la conexión por cable**
 5. Verificar la conexión a internet.
 6. Debido a que el juego es de dos jugadores se debera repetir estos pasos en otro computador.
-7. Abrir el juego en unity en ambos computadores y darle al botón de Play. 
+7. Abrir el juego en unity en ambos computadores y darle al botón de Play. **En caso de que el juego este pausado, habra que volver a presionar el boton de pausa para poder ejecutar el juego** 
 
 ### Errores Conocidos
 
