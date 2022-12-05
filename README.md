@@ -24,22 +24,22 @@ Este proyecto fue desarrollado en el motor de juegos conocido como Unity, en la 
 
 ### Assets
 
-**Ultimate Low Poly Dungeon v2.0**
+- **Ultimate Low Poly Dungeon v2.0**
 https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
 
-**Low Poly Skeleton v1.0**
+- **Low Poly Skeleton v1.0**
 https://assetstore.unity.com/packages/3d/characters/low-poly-skeleton-162347 
 
-**Photon PUN2 v2.41**
+- **Photon PUN2 v2.41**
 https://assetstore.unity.com/packages/tools/network/pun-2-free-119922#releases
 
-**Free Low Poly Nature Forest v1.1**
+- **Free Low Poly Nature Forest v1.1**
 https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742
 
-**Paintings Free v1.0**
+- **Paintings Free v1.0**
  https://assetstore.unity.com/packages/3d/props/interior/paintings-free-44185
 
-**Interactive Physical Door Pack v1.0**
+- **Interactive Physical Door Pack v1.0**
 https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pack-163249 
 
 ### Paquetes
@@ -60,3 +60,11 @@ https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pa
 5. Verificar la conexión a internet.
 6. Debido a que el juego es de dos jugadores se debera repetir estos pasos en otro computador.
 7. Abrir el juego en unity en ambos computadores y darle al botón de Play. 
+
+### Errores Conocidos
+
+- Si hay una perdida de conexión, es necesario reiniciar el juego. Pues la camara del jugador se va a desactivar y esto provocará mareo. Sera practicamente inutilizable.
+
+- Los objetivos interactivos correspondientes a los engranajes son propensos a desincronizarse, por lo cual hay que acomodarlos manualmente en la escena, es decir en el editor de Unity. 
+
+
