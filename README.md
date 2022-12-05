@@ -4,11 +4,11 @@ Este proyecto es un juego de puzzles cooperativo (2 jugadores) en realidad virtu
 
 ## Colaboradores
 
- - Ángela Jimenez
-   [LinkedIn](https://www.linkedin.com/in/angelajimenezf/)
+ - Ángela Jimenez -
+[LinkedIn](https://www.linkedin.com/in/angelajimenezf/)
 
- - Andrés Rincón
-   [LinkedIn](https://www.linkedin.com/in/andresrinconp/)
+ - Andrés Rincón -
+[LinkedIn](https://www.linkedin.com/in/andresrinconp/)
 
  ## Descripción
 
