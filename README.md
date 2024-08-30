@@ -1,70 +1,45 @@
-# ColabVRTesis
+# ColabVRTesis  
+This project is a cooperative puzzle game (2 players) in virtual reality.
 
-Este proyecto es un juego de puzzles cooperativo (2 jugadores) en realidad virtual.
+## Collaborators  
+- Ángela Jimenez - [LinkedIn](https://www.linkedin.com/in/angelajimenezf/)
+- Andrés Rincón - [LinkedIn](https://www.linkedin.com/in/andresrinconp/)
 
-## Colaboradores
+## Description  
+The project is a cooperative virtual reality game following the dynamics of an escape room. This means the players, in this case, two, will be immersed in a virtual environment set in the medieval era, and they will have the task of solving various puzzles to escape confinement. The puzzles they face will test their ability to work as a team and communicate their ideas effectively.
 
- - Ángela Jimenez -
-[LinkedIn](https://www.linkedin.com/in/angelajimenezf/)
+## Objective  
+The aim of this project is to evaluate the impact of virtual environments on players' communication and relationship skills, specifically their ability to work as a team.
 
- - Andrés Rincón -
-[LinkedIn](https://www.linkedin.com/in/andresrinconp/)
+## Technologies Used  
+This project was developed using the Unity game engine, version 2021.3.5f1. The following assets and packages were used for the game's development:
 
- ## Descripción
+### Assets  
+- [Ultimate Low Poly Dungeon v2.0](https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535)  
+- [Low Poly Skeleton v1.0](https://assetstore.unity.com/packages/3d/characters/low-poly-skeleton-162347)  
+- [Photon PUN2 v2.41](https://assetstore.unity.com/packages/tools/network/pun-2-free-119922#releases)  
+- [Free Low Poly Nature Forest v1.1](https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742)  
+- [Paintings Free v1.0](https://assetstore.unity.com/packages/3d/props/interior/paintings-free-44185)  
+- [Interactive Physical Door Pack v1.0](https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pack-163249)  
 
- El proyecto es un juego cooperativo de realidad virtual que sigue la dinámica de un escape room. Esto significa que los jugadores, en este caso dos, estarán sumergidos en un entorno virtual ambientado en la época medieval y estos tendrán la tarea de resolver distintos acertijos para lograr escapar de su encierro. Asimismo, los acertijos a los cuales se enfrentarán evaluarán sus habilidades para trabajar en equipo y comunicar sus ideas.
+### Packages  
+- FBX Exporter v4.1.2  
+- JetBrains Rider Editor v3.0.14  
+- Oculus XR Plugin v3.0.2  
+- TextMeshPro v3.0.6  
+- Universal RP v12.1.7  
+- XR Interaction Toolkit v2.0.1  
+- XR Plugin Management v4.2.1  
 
- ## Objetivo
+## Instructions for Execution  
+1. Unity version 2021.3.5f1 was used, so it is necessary to download this version for all files to be installed correctly.  
+2. Clone the repository.  
+3. Open UnityHub and add the project by selecting the folder where the repository was cloned.  
+4. Connect the virtual reality headset and enable the Quest Link option. The game must be run from the computer, so a cable connection is necessary.  
+5. Check the internet connection.  
+6. Since the game is for two players, these steps must be repeated on another computer.  
+7. Open the game in Unity on both computers and press the Play button. If the game is paused, press the pause button again to execute the game.
 
- Con este proyecto se busca evaluar el impacto que tienen los entornos virtuales en las habilidades de comunicación y relacionamiento de los jugadores, especificamente en su habilidad para trabajar en equipo.
-
-## Tecnologías Utilizadas
-
-Este proyecto fue desarrollado en el motor de juegos conocido como Unity, en la versión 2021.3.5f1. Además para la elaboración del juego se utilizaron los siguientes assets y paquetes:
-
-### Assets
-
-- **Ultimate Low Poly Dungeon v2.0**
-https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
-
-- **Low Poly Skeleton v1.0**
-https://assetstore.unity.com/packages/3d/characters/low-poly-skeleton-162347 
-
-- **Photon PUN2 v2.41**
-https://assetstore.unity.com/packages/tools/network/pun-2-free-119922#releases
-
-- **Free Low Poly Nature Forest v1.1**
-https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742
-
-- **Paintings Free v1.0**
- https://assetstore.unity.com/packages/3d/props/interior/paintings-free-44185
-
-- **Interactive Physical Door Pack v1.0**
-https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pack-163249 
-
-### Paquetes
-- FBX Exporter v4.1.2
-- JetBrains Rider Editor v3.0.14
-- Oculus XR Plugin v 3.0.2 
-- TextMeshPro v3.0.6
-- Universal RP v12.1.7
-- XR Interaction Toolkit v2.0.1
-- XR Plugin Management v4.2.1
-
-## Instructivo para ejecución
-
-1. Se utilizó la versión de Unity 2021.3.5f1 por lo cual es necesario su descarga para que todos los archivos sean instalados correctamente.
-2. Clonar el repositorio.
-3. Abrir UnityHub y agregar el proyecto seleccionando la carpeta donde se clonó el repositorio.
-4. Conectar las gafas de realidad virtual y habilitar la opción de quest link. **El juego se debe ejecutar desde el computador, por lo cual es necesario la conexión por cable**
-5. Verificar la conexión a internet.
-6. Debido a que el juego es de dos jugadores se debera repetir estos pasos en otro computador.
-7. Abrir el juego en unity en ambos computadores y darle al botón de Play. **En caso de que el juego este pausado, habra que volver a presionar el boton de pausa para poder ejecutar el juego** 
-
-### Errores Conocidos
-
-- Si hay una perdida de conexión, es necesario reiniciar el juego. Pues la camara del jugador se va a desactivar y esto provocará mareo. Sera practicamente inutilizable.
-
-- Los objetivos interactivos correspondientes a los engranajes son propensos a desincronizarse, por lo cual hay que acomodarlos manualmente en la escena, es decir en el editor de Unity. 
-
-
+## Known Issues  
+- If there is a loss of connection, it is necessary to restart the game, as the player's camera will deactivate, causing dizziness. The game will become practically unusable.  
+- The interactive objectives related to the gears are prone to desynchronization, so they must be manually adjusted in the scene, meaning in the Unity editor.
